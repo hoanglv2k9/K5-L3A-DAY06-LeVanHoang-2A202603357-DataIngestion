@@ -1,0 +1,218 @@
+[
+  {
+    "page": 1,
+    "section": "so_tu_nhien",
+    "title": "Tập hợp và các phần tử của tập hợp. Tập hợp số tự nhiên",
+    "text": "### 1. Khái niệm tập hợp và phần tử\nTập hợp là một khái niệm cơ bản trong toán học. Một tập hợp thường được ký hiệu bằng chữ cái in hoa như A, B, C, X, Y. Các phần tử của một tập hợp được viết trong hai dấu ngoặc nhọn { }, cách nhau bởi dấu chấm phẩy ';'.\nNếu phần tử x thuộc tập hợp A, ta viết x ∈ A. Nếu phần tử y không thuộc tập hợp A, ta viết y ∉ A.\nMỗi phần tử chỉ được liệt kê một lần và thứ tự liệt kê các phần tử là tùy ý.\n\n### 2. Tập hợp số tự nhiên\nTập hợp các số tự nhiên được ký hiệu là N = {0; 1; 2; 3; 4; ...}.\nTập hợp các số tự nhiên khác 0 được ký hiệu là N* = {1; 2; 3; 4; ...}.\nSố tự nhiên nhỏ nhất là số 0. Không có số tự nhiên lớn nhất vì tập hợp N là vô hạn.\nHai số tự nhiên liên tiếp hơn kém nhau 1 đơn vị. Mỗi số tự nhiên có một số liền sau duy nhất và (trừ số 0) có một số liền trước duy nhất."
+  },
+  {
+    "page": 2,
+    "section": "so_tu_nhien",
+    "title": "Cách ghi số tự nhiên. Hệ thập phân và chữ số La Mã",
+    "text": "### 1. Hệ thập phân\nĐể ghi số tự nhiên trong hệ thập phân, người ta dùng mười chữ số: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.\nTrong hệ thập phân, giá trị của mỗi chữ số phụ thuộc vào vị trí của nó trong số đó (nguyên tắc giá trị theo vị trí). Cứ mười đơn vị ở một hàng thì làm thành một đơn vị ở hàng liền trước nó.\nVí dụ: Số 235 có chữ số 2 ở hàng trăm có giá trị 200, chữ số 3 ở hàng chục có giá trị 30, chữ số 5 ở hàng đơn vị có giá trị 5. Ta viết: 235 = 2 x 100 + 3 x 10 + 5.\n\n### 2. Chữ số La Mã\nHệ thống chữ số La Mã sử dụng 7 chữ số cơ bản: I (1), V (5), X (10), L (50), C (100), D (500), M (1000).\nCác quy tắc kết hợp chữ số La Mã:\n- Chữ số I, X không được lặp lại quá 3 lần liên tiếp.\n- Chữ số V, L, D không bao giờ được lặp lại.\n- Khi chữ số có giá trị nhỏ hơn đứng trước chữ số lớn hơn, ta lấy giá trị lớn trừ giá trị nhỏ: IV là 4, IX là 9, XL là 40, XC là 90."
+  },
+  {
+    "page": 3,
+    "section": "so_tu_nhien",
+    "title": "Các phép tính với số tự nhiên và Luỹ thừa với số mũ tự nhiên",
+    "text": "### 1. Các phép tính cơ bản\nPhép cộng và phép nhân số tự nhiên có tính chất giao hoán, kết hợp. Phép nhân có tính chất phân phối đối với phép cộng: a x (b + c) = a x b + a x c.\nTrong phép chia có dư: a = b x q + r, trong đó số dư r phải thỏa mãn điều kiện 0 ≤ r < b. Nếu r = 0 thì đó là phép chia hết.\n\n### 2. Luỹ thừa với số mũ tự nhiên\nLuỹ thừa bậc n của số tự nhiên a là tích của n thừa số bằng nhau, mỗi thừa số bằng a: a^n = a x a x ... x a (với n thừa số a, n ∈ N*).\nSố a được gọi là cơ số, số n được gọi là số mũ. Quy ước: a^1 = a, a^0 = 1 (với a ≠ 0).\nQuy tắc nhân hai luỹ thừa cùng cơ số: Giữ nguyên cơ số và cộng các số mũ: a^m x a^n = a^(m + n).\nQuy tắc chia hai luỹ thừa cùng cơ số: Giữ nguyên cơ số và trừ các số mũ: a^m : a^n = a^(m - n) (với a ≠ 0 và m ≥ n)."
+  },
+  {
+    "page": 4,
+    "section": "so_tu_nhien",
+    "title": "Thứ tự thực hiện các phép tính trong biểu thức",
+    "text": "### 1. Biểu thức không có dấu ngoặc\n- Nếu biểu thức chỉ có phép cộng và trừ (hoặc chỉ có phép nhân và chia), ta thực hiện các phép tính theo thứ tự từ trái sang phải.\n- Nếu biểu thức có cả phép cộng, trừ, nhân, chia và nâng lên luỹ thừa, thứ tự ưu tiên thực hiện là: Luỹ thừa -> Nhân và chia -> Cộng và trừ.\n\n### 2. Biểu thức có chứa dấu ngoặc\nKhi biểu thức có chứa các dấu ngoặc khác nhau, thứ tự thực hiện các phép tính bên trong ngoặc là:\nThực hiện trong ngoặc tròn ( ) trước -> Sau đó đến ngoặc vuông [ ] -> Cuối cùng thực hiện trong ngoặc nhọn { }.\nSau khi giải quyết xong các phép tính trong ngoặc nhọn, tiếp tục thực hiện các phép tính bên ngoài ngoặc theo quy tắc ưu tiên luỹ thừa, nhân chia rồi đến cộng trừ."
+  },
+  {
+    "page": 5,
+    "section": "so_tu_nhien",
+    "title": "Tính chất chia hết của một tổng và Dấu hiệu chia hết",
+    "text": "### 1. Tính chất chia hết của một tổng\n- Nếu tất cả các số hạng của một tổng đều chia hết cho cùng một số m, thì tổng đó chia hết cho m: Nếu a ⋮ m và b ⋮ m thì (a + b) ⋮ m.\n- Nếu chỉ có duy nhất một số hạng của tổng không chia hết cho m, còn các số hạng khác đều chia hết cho m, thì tổng đó không chia hết cho m.\n\n### 2. Các dấu hiệu chia hết cơ bản\n- Dấu hiệu chia hết cho 2: Các số có chữ số tận cùng là chữ số chẵn (0, 2, 4, 6, 8) thì chia hết cho 2 và chỉ những số đó mới chia hết cho 2.\n- Dấu hiệu chia hết cho 5: Các số có chữ số tận cùng là 0 hoặc 5 thì chia hết cho 5. Số vừa chia hết cho 2 vừa chia hết cho 5 phải có tận cùng bằng 0.\n- Dấu hiệu chia hết cho 3: Các số có tổng các chữ số chia hết cho 3 thì chia hết cho 3.\n- Dấu hiệu chia hết cho 9: Các số có tổng các chữ số chia hết cho 9 thì chia hết cho 9. Một số chia hết cho 9 thì luôn chia hết cho 3, nhưng số chia hết cho 3 chưa chắc chia hết cho 9."
+  },
+  {
+    "page": 6,
+    "section": "so_tu_nhien",
+    "title": "Số nguyên tố, Hợp số. Ước chung lớn nhất và Bội chung nhỏ nhất",
+    "text": "### 1. Số nguyên tố và hợp số\n- Số nguyên tố là số tự nhiên lớn hơn 1, chỉ có hai ước là 1 và chính nó. Số 2 là số nguyên tố chẵn duy nhất và là số nguyên tố nhỏ nhất.\n- Hợp số là số tự nhiên lớn hơn 1, có nhiều hơn hai ước (tức là ngoài 1 và chính nó còn có ít nhất một ước khác).\n- Số 0 và số 1 không phải là số nguyên tố cũng không phải là hợp số.\n\n### 2. Ước chung lớn nhất (ƯCLN) và Bội chung nhỏ nhất (BCNN)\n- Ước chung lớn nhất của hai hay nhiều số là số lớn nhất trong tập hợp các ước chung của các số đó. Cách tìm: Phân tích các số ra thừa số nguyên tố, chọn ra các thừa số nguyên tố chung và lập tích với số mũ nhỏ nhất.\n- Hai số có ƯCLN bằng 1 được gọi là hai số nguyên tố cùng nhau.\n- Bội chung nhỏ nhất của hai hay nhiều số là số nhỏ nhất khác 0 trong tập hợp các bội chung. Cách tìm: Chọn các thừa số nguyên tố chung và riêng, lập tích với số mũ lớn nhất."
+  },
+  {
+    "page": 7,
+    "section": "so_nguyen",
+    "title": "Số nguyên âm và Tập hợp các số nguyên. Trục số nguyên",
+    "text": "### 1. Số nguyên âm trong thực tế\nTrong đời sống, để biểu thị các đại lượng có hướng ngược nhau, người ta dùng số dương và số âm:\n- Nhiệt độ dưới 0 độ C được ghi bằng số nguyên âm, ví dụ: -5°C (âm năm độ C).\n- Độ sâu dưới mực nước biển: -20 m biểu thị độ sâu 20 mét dưới mực nước biển.\n- Số tiền nợ hoặc lỗ trong kinh doanh được ghi bằng số nguyên âm.\n\n### 2. Tập hợp các số nguyên Z\nTập hợp gồm các số nguyên âm, số 0 và các số nguyên dương được gọi là tập hợp các số nguyên, ký hiệu là Z = {..., -3, -2, -1, 0, 1, 2, 3, ...}.\nSố 0 là số nguyên nhưng không phải là số nguyên dương và cũng không phải là số nguyên âm.\nSố đối của số nguyên a ký hiệu là -a. Số đối của số 0 là chính nó (0). Hai số đối nhau cách đều điểm 0 trên trục số."
+  },
+  {
+    "page": 8,
+    "section": "so_nguyen",
+    "title": "So sánh các số nguyên trên trục số",
+    "text": "### 1. Thứ tự trên trục số nằm ngang\nTrên trục số nằm ngang, điểm biểu diễn số nhỏ hơn nằm ở bên trái điểm biểu diễn số lớn hơn.\nNếu điểm a nằm bên trái điểm b thì a < b hoặc b > a. Chiều từ trái sang phải là chiều dương.\n\n### 2. Quy tắc so sánh số nguyên\n- Mọi số nguyên dương đều lớn hơn số 0: Với a > 0 thì a > 0.\n- Mọi số nguyên âm đều nhỏ hơn số 0: Với a < 0 thì a < 0.\n- Mọi số nguyên âm đều nhỏ hơn bất kỳ số nguyên dương nào.\n- So sánh hai số nguyên âm: Trong hai số nguyên âm, số nào có số đối lớn hơn thì số đó nhỏ hơn (hoặc số nào có khoảng cách tới gốc 0 xa hơn về bên trái thì số đó nhỏ hơn). Ví dụ: -9 < -4 vì số đối 9 lớn hơn 4."
+  },
+  {
+    "page": 9,
+    "section": "so_nguyen",
+    "title": "Phép cộng các số nguyên cùng dấu và khác dấu",
+    "text": "### 1. Cộng hai số nguyên cùng dấu\n- Cộng hai số nguyên dương: Thực hiện tương tự cộng hai số tự nhiên thông thường.\n- Cộng hai số nguyên âm: Ta cộng hai số đối của chúng rồi đặt dấu trừ '-' trước kết quả. Công thức: (-a) + (-b) = -(a + b) với a, b > 0.\nVí dụ: (-15) + (-25) = -(15 + 25) = -40.\n\n### 2. Cộng hai số nguyên khác dấu\n- Hai số đối nhau có tổng bằng 0: a + (-a) = 0.\n- Muốn cộng hai số nguyên khác dấu không đối nhau: Ta lấy số có số đối lớn hơn trừ đi số có số đối nhỏ hơn, rồi đặt dấu của số có số đối lớn hơn trước kết quả.\nVí dụ 1: 18 + (-7) = 18 - 7 = 11 (vì 18 > 7, mang dấu dương).\nVí dụ 2: (-20) + 8 = -(20 - 8) = -12 (vì số đối của -20 là 20 lớn hơn 8, mang dấu âm)."
+  },
+  {
+    "page": 10,
+    "section": "so_nguyen",
+    "title": "Phép trừ số nguyên và Quy tắc dấu ngoặc",
+    "text": "### 1. Phép trừ hai số nguyên\nMuốn trừ số nguyên a cho số nguyên b, ta lấy a cộng với số đối của b: a - b = a + (-b).\nPhép trừ trong tập hợp số nguyên Z luôn luôn thực hiện được mà không bị ràng buộc điều kiện số bị trừ phải lớn hơn số trừ như trong tập hợp số tự nhiên N.\nVí dụ: 3 - 8 = 3 + (-8) = -5.\n\n### 2. Quy tắc dấu ngoặc\n- Khi bỏ dấu ngoặc có dấu cộng '+' đằng trước, ta giữ nguyên dấu của tất cả các số hạng trong ngoặc: +(a - b + c) = a - b + c.\n- Khi bỏ dấu ngoặc có dấu trừ '-' đằng trước, ta phải đổi dấu của tất cả các số hạng trong ngoặc: Dấu '+' đổi thành '-' và dấu '-' đổi thành '+': -(a - b + c) = -a + b - c.\n- Tương tự, khi đặt dấu ngoặc có dấu trừ đằng trước, ta cũng phải đổi dấu tất cả các số hạng đưa vào trong ngoặc."
+  },
+  {
+    "page": 11,
+    "section": "so_nguyen",
+    "title": "Phép nhân hai số nguyên và Tính chất phân phối",
+    "text": "### 1. Quy tắc nhân hai số nguyên\n- Nhân hai số nguyên cùng dấu: Tích của hai số nguyên cùng dấu luôn là một số nguyên dương.\n  (+) x (+) = (+) và (-) x (-) = (+).\n  Quy tắc: Muốn nhân hai số nguyên âm, ta nhân hai số đối của chúng: (-a) x (-b) = a x b. Ví dụ: (-6) x (-5) = 30.\n- Nhân hai số nguyên khác dấu: Tích của hai số nguyên khác dấu luôn là một số nguyên âm.\n  (+) x (-) = (-) và (-) x (+) = (-).\n  Quy tắc: Muốn nhân hai số nguyên khác dấu, ta nhân hai số đối của chúng rồi đặt dấu '-' trước kết quả: (-a) x b = -(a x b). Ví dụ: (-7) x 4 = -28.\n- Tích của bất kỳ số nguyên nào với số 0 cũng bằng 0: a x 0 = 0.\n\n### 2. Tính chất phép nhân số nguyên\nPhép nhân số nguyên có tính chất giao hoán: a x b = b x a; tính chất kết hợp: (a x b) x c = a x (b x c); tính chất phân phối đối với phép cộng và phép trừ: a x (b + c) = a x b + a x c."
+  },
+  {
+    "page": 12,
+    "section": "so_nguyen",
+    "title": "Quan hệ chia hết và Phép chia hết trong tập hợp số nguyên Z",
+    "text": "### 1. Khái niệm bội và ước trong Z\nCho hai số nguyên a và b (với b ≠ 0). Nếu có số nguyên q sao cho a = b x q thì ta nói a chia hết cho b, ký hiệu là a ⋮ b.\nKhi đó, a được gọi là bội của b và b được gọi là ước của a.\nVí dụ: 12 là bội của -3 vì 12 = (-3) x (-4); -3 là ước của 12.\n\n### 2. Các tính chất quan trọng về bội và ước trong Z\n- Nếu a chia hết cho b thì -a cũng chia hết cho b: a ⋮ b => (-a) ⋮ b.\n- Các số 1 và -1 là ước của mọi số nguyên.\n- Số 0 là bội của mọi số nguyên khác 0, nhưng số 0 không phải là ước của bất kỳ số nguyên nào vì phép chia cho 0 không xác định.\n- Nếu a là ước của b và b là ước của c thì a là ước của c (tính chất bắc cầu).\n- Quy tắc dấu trong phép chia hết hai số nguyên hoàn toàn tương tự quy tắc dấu của phép nhân: Cùng dấu cho kết quả dương, khác dấu cho kết quả âm."
+  },
+  {
+    "page": 13,
+    "section": "phan_so",
+    "title": "Mở rộng khái niệm phân số và Định nghĩa hai phân số bằng nhau",
+    "text": "### 1. Khái niệm phân số tổng quát\nNgười ta gọi a/b với a, b ∈ Z và b ≠ 0 là một phân số, trong đó a là tử số (tử) và b là mẫu số (mẫu) của phân số.\nSố nguyên n có thể viết dưới dạng phân số là n/1.\nPhân số có thể nhận giá trị âm, ví dụ: -3/4 hoặc 5/-7. Chú ý: Phân số 5/-7 thường được đổi thành dạng chuẩn có mẫu dương là -5/7 bằng cách nhân cả tử và mẫu với -1.\n\n### 2. Hai phân số bằng nhau\nHai phân số a/b và c/d được gọi là bằng nhau nếu thỏa mãn điều kiện tích chéo: a x d = b x c.\nKý hiệu: a/b = c/d khi và chỉ khi a x d = b x c.\nVí dụ: Phân số -2/3 bằng phân số 6/-9 vì (-2) x (-9) = 3 x 6 = 18.\nDựa vào quy tắc này, ta có thể tìm số nguyên x chưa biết trong tỉ lệ thức phân số: Nếu x/b = c/d thì x = (b x c) / d."
+  },
+  {
+    "page": 14,
+    "section": "phan_so",
+    "title": "Tính chất cơ bản của phân số và Rút gọn phân số",
+    "text": "### 1. Tính chất cơ bản của phân số\n- Tính chất nhân: Nếu ta nhân cả tử và mẫu của một phân số với cùng một số nguyên khác 0 thì ta được một phân số bằng phân số đã cho: a/b = (a x m) / (b x m) (với m ∈ Z, m ≠ 0).\n- Tính chất chia: Nếu ta chia cả tử và mẫu của một phân số cho cùng một ước chung của chúng thì ta được một phân số bằng phân số đã cho: a/b = (a : n) / (b : n) (với n ∈ ƯC(a, b)).\n\n### 2. Rút gọn phân số về phân số tối giản\n- Rút gọn phân số là chia cả tử và mẫu của phân số cho một ước chung khác 1 và -1 để được phân số đơn giản hơn.\n- Phân số tối giản là phân số mà tử và mẫu chỉ có ước chung là 1 và -1 (tức là ƯCLN(|a|, |b|) = 1).\n- Muốn rút gọn một phân số về phân số tối giản chỉ trong một lần, ta chia cả tử và mẫu của phân số đó cho ước chung lớn nhất (ƯCLN) của chúng."
+  },
+  {
+    "page": 15,
+    "section": "phan_so",
+    "title": "Quy đồng mẫu nhiều phân số và So sánh phân số",
+    "text": "### 1. Quy tắc quy đồng mẫu số nhiều phân số\nĐể quy đồng mẫu nhiều phân số có mẫu dương, ta thực hiện theo 3 bước:\n- Bước 1: Tìm một bội chung của các mẫu (thường là BCNN của các mẫu) để làm mẫu chung.\n- Bước 2: Tìm thừa số phụ của mỗi mẫu bằng cách chia mẫu chung cho từng mẫu riêng biệt.\n- Bước 3: Nhân tử và mẫu của mỗi phân số với thừa số phụ tương ứng.\n\n### 2. So sánh hai phân số\n- So sánh hai phân số cùng mẫu dương: Trong hai phân số có cùng một mẫu dương, phân số nào có tử số lớn hơn thì phân số đó lớn hơn: Nếu a > b thì a/m > b/m (với m > 0).\n- So sánh hai phân số khác mẫu: Ta quy đồng mẫu các phân số đó về cùng một mẫu dương, rồi so sánh các tử số với nhau.\n- Phân số có tử và mẫu cùng dấu thì lớn hơn 0 (phân số dương). Phân số có tử và mẫu trái dấu thì nhỏ hơn 0 (phân số âm). Phân số âm luôn nhỏ hơn phân số dương."
+  },
+  {
+    "page": 16,
+    "section": "phan_so",
+    "title": "Phép cộng và phép trừ phân số",
+    "text": "### 1. Phép cộng phân số\n- Cộng hai phân số cùng mẫu: Muốn cộng hai phân số có cùng mẫu, ta cộng các tử số và giữ nguyên mẫu số: a/m + b/m = (a + b)/m.\n- Cộng hai phân số khác mẫu: Muốn cộng hai phân số không cùng mẫu, ta viết chúng dưới dạng hai phân số có cùng một mẫu rồi áp dụng quy tắc cộng hai phân số cùng mẫu.\n- Tính chất phép cộng phân số: Giao hoán: a/b + c/d = c/d + a/b; Kết hợp: (a/b + c/d) + p/q = a/b + (c/d + p/q); Cộng với số 0: a/b + 0 = a/b.\n\n### 2. Phép trừ phân số\n- Số đối của phân số a/b là phân số -a/b, ký hiệu là -(a/b). Tổng của hai phân số đối nhau bằng 0: a/b + (-a/b) = 0.\n- Muốn trừ một phân số cho một phân số, ta cộng số bị trừ với số đối của số trừ: a/b - c/d = a/b + (-c/d)."
+  },
+  {
+    "page": 17,
+    "section": "phan_so",
+    "title": "Phép nhân, phép chia phân số và Số nghịch đảo",
+    "text": "### 1. Phép nhân phân số\nMuốn nhân hai phân số, ta nhân các tử với nhau và nhân các mẫu với nhau: (a/b) x (c/d) = (a x c) / (b x d).\nMuốn nhân một số nguyên với một phân số, ta nhân số nguyên đó với tử của phân số và giữ nguyên mẫu: a x (b/c) = (a x b)/c.\nPhép nhân phân số có đầy đủ tính chất giao hoán, kết hợp và phân phối đối với phép cộng.\n\n### 2. Số nghịch đảo và Phép chia phân số\n- Hai số được gọi là nghịch đảo của nhau nếu tích của chúng bằng 1. Số nghịch đảo của phân số a/b (với a, b ≠ 0) là phân số b/a.\n- Số 0 không có số nghịch đảo.\n- Phép chia phân số: Muốn chia một phân số cho một phân số khác 0, ta nhân số bị chia với số nghịch đảo của số chia: (a/b) : (c/d) = (a/b) x (d/c) = (a x d) / (b x c) (với c/d ≠ 0)."
+  },
+  {
+    "page": 18,
+    "section": "phan_so",
+    "title": "Hai bài toán cơ bản về phân số",
+    "text": "### 1. Bài toán 1: Tìm giá trị phân số của một số cho trước\nQuy tắc: Muốn tìm m/n của một số b cho trước (với m/n ∈ Q, n ≠ 0), ta lấy số b nhân với m/n:\nGiá trị cần tìm = b x (m/n).\nVí dụ: Một mảnh vườn có diện tích 120 m^2. Diện tích trồng hoa chiếm 3/5 diện tích mảnh vườn.\nDiện tích trồng hoa là: 120 x (3/5) = 72 m^2.\n\n### 2. Bài toán 2: Tìm một số biết giá trị một phân số của nó\nQuy tắc: Muốn tìm một số biết m/n của nó bằng a, ta lấy a chia cho m/n (với m, n ≠ 0):\nSố cần tìm = a : (m/n).\nVí dụ: Tìm chiều dài một khúc vải biết rằng 2/3 khúc vải dài 18 mét.\nChiều dài khúc vải ban đầu là: 18 : (2/3) = 18 x (3/2) = 27 mét."
+  },
+  {
+    "page": 19,
+    "section": "so_thap_phan",
+    "title": "Số thập phân và Cấu tạo của số thập phân",
+    "text": "### 1. Định nghĩa số thập phân\nPhân số thập phân là phân số mà mẫu số là luỹ thừa của 10 (ví dụ: 10, 100, 1000,...).\nCác phân số thập phân có thể viết dưới dạng số thập phân.\nSố thập phân gồm hai phần cách nhau bởi dấu phẩy:\n- Phần nằm bên trái dấu phẩy gọi là phần số nguyên (phần nguyên).\n- Phần nằm bên phải dấu phẩy gọi là phần thập phân.\nVí dụ: Số 37,25 có phần nguyên là 37 và phần thập phân gồm chữ số 2 ở hàng phần mười, chữ số 5 ở hàng phần trăm.\n\n### 2. Số thập phân âm\nSố đối của số thập phân a ký hiệu là -a.\nSố thập phân âm là số thập phân có dấu trừ '-' đứng đằng trước. Ví dụ: -0,75; -12,4.\nMọi phân số thập phân âm đều được viết dưới dạng số thập phân âm: -15/100 = -0,15."
+  },
+  {
+    "page": 20,
+    "section": "so_thap_phan",
+    "title": "So sánh các số thập phân",
+    "text": "### 1. Quy tắc so sánh hai số thập phân dương\nĐể so sánh hai số thập phân dương:\n- So sánh phần nguyên trước: Số thập phân nào có phần nguyên lớn hơn thì số đó lớn hơn.\n- Nếu phần nguyên bằng nhau, ta so sánh từng hàng ở phần thập phân từ trái sang phải (hàng phần mười, hàng phần trăm, hàng phần nghìn...). Ở hàng đầu tiên có chữ số khác nhau, số nào có chữ số lớn hơn thì số đó lớn hơn.\nVí dụ: 15,38 > 15,35 vì phần nguyên bằng 15, hàng phần mười đều là 3, nhưng hàng phần trăm 8 > 5.\n\n### 2. So sánh tổng quát số thập phân\n- Mọi số thập phân dương đều lớn hơn 0 và lớn hơn mọi số thập phân âm.\n- Để so sánh hai số thập phân âm: Ta so sánh hai số đối của chúng. Số nào có số đối lớn hơn thì số đó nhỏ hơn.\nVí dụ: So sánh -3,75 và -3,25. Ta thấy 3,75 > 3,25 nên kết luận -3,75 < -3,25."
+  },
+  {
+    "page": 21,
+    "section": "so_thap_phan",
+    "title": "Các phép tính cộng, trừ, nhân, chia với số thập phân",
+    "text": "### 1. Phép cộng và trừ số thập phân\nQuy tắc đặt tính: Đặt các số thập phân sao cho các chữ số ở cùng một hàng thẳng cột với nhau (dấu phẩy thẳng cột với dấu phẩy), rồi thực hiện cộng hoặc trừ như đối với số tự nhiên.\nQuy tắc dấu khi cộng trừ số thập phân hoàn toàn tương tự quy tắc cộng trừ số nguyên:\n- Cộng hai số thập phân âm: (-a) + (-b) = -(a + b).\n- Trừ hai số thập phân: a - b = a + (-b).\n\n### 2. Phép nhân và chia số thập phân\n- Nhân hai số thập phân: Nhân như nhân hai số tự nhiên, sau đó đếm xem trong phần thập phân của cả hai thừa số có tất cả bao nhiêu chữ số rồi dùng dấu phẩy tách ở tích bấy nhiêu chữ số kể từ phải sang trái.\n- Quy tắc nhân chia có dấu:\n  Cùng dấu cho kết quả dương: (-) x (-) = (+); (-) : (-) = (+).\n  Khác dấu cho kết quả âm: (-) x (+) = (-); (-) : (+) = (-).\n- Nhân với 10, 100, 1000...: Dịch dấu phẩy sang phải 1, 2, 3... chữ số.\n- Chia cho 10, 100, 1000...: Dịch dấu phẩy sang trái 1, 2, 3... chữ số."
+  },
+  {
+    "page": 22,
+    "section": "so_thap_phan",
+    "title": "Làm tròn số thập phân và Ước lượng kết quả",
+    "text": "### 1. Quy tắc làm tròn số thập phân\nMuốn làm tròn một số thập phân đến một hàng nào đó (hàng làm tròn), ta nhìn vào chữ số ngay bên phải của hàng làm tròn:\n- Trường hợp 1: Nếu chữ số đầu tiên bỏ đi nhỏ hơn 5 (là 0, 1, 2, 3, 4), ta giữ nguyên chữ số ở hàng làm tròn.\n- Trường hợp 2: Nếu chữ số đầu tiên bỏ đi lớn hơn hoặc bằng 5 (là 5, 6, 7, 8, 9), ta cộng thêm 1 vào chữ số ở hàng làm tròn.\n- Đối với phần thập phân sau hàng làm tròn: Ta bỏ hẳn đi.\n- Đối với phần nguyên sau hàng làm tròn: Ta thay các chữ số bỏ đi bằng các chữ số 0.\nVí dụ: Làm tròn số 7,436 đến hàng phần mười: Chữ số bên phải là 3 < 5 nên giữ nguyên 4 -> Kết quả: 7,4.\n\n### 2. Ước lượng kết quả\nĐể ước lượng nhanh kết quả của một phép tính phức tạp trong thực tế, người ta thường làm tròn các số hạng hoặc thừa số đến hàng cao nhất rồi mới thực hiện phép tính nhẩm."
+  },
+  {
+    "page": 23,
+    "section": "so_thap_phan",
+    "title": "Tỉ số và Tỉ số phần trăm",
+    "text": "### 1. Khái niệm tỉ số của hai số\nTỉ số của hai số a và b (với b ≠ 0) là thương của phép chia số a cho số b, ký hiệu là a/b hoặc a : b.\nKhái niệm tỉ số thường được dùng khi so sánh hai đại lượng cùng loại và cùng đơn vị đo.\n\n### 2. Tỉ số phần trăm\nTỉ số phần trăm của hai số a và b là tỉ số của a và b được viết dưới dạng phân số có mẫu số là 100, ký hiệu là %.\nQuy tắc tính tỉ số phần trăm của hai số a và b: Ta lấy a chia cho b, rồi nhân kết quả với 100 và viết thêm ký hiệu % vào bên phải kết quả:\nTỉ số phần trăm = (a x 100 / b) %.\nVí dụ: Trong một lớp học có 40 học sinh, trong đó có 24 học sinh nữ.\nTỉ số phần trăm của số học sinh nữ so với tổng số học sinh của lớp là: (24 x 100 / 40)% = 60%."
+  },
+  {
+    "page": 24,
+    "section": "so_thap_phan",
+    "title": "Các bài toán thực tế về tỉ số phần trăm",
+    "text": "### 1. Bài toán tìm giá trị phần trăm của một số\nMuốn tìm a% của một số b cho trước, ta lấy b nhân với a rồi chia cho 100 (hoặc lấy b nhân với a%):\nGiá trị = (b x a) / 100.\nVí dụ: Giá niêm yết của một chiếc áo khoác là 500.000 đồng. Cửa hàng đang có chương trình giảm giá 15%.\nSố tiền được giảm là: 500.000 x 15 / 100 = 75.000 đồng. Giá sau khi giảm là: 500.000 - 75.000 = 425.000 đồng.\n\n### 2. Bài toán tìm một số khi biết giá trị phần trăm của nó\nMuốn tìm một số biết a% của nó bằng c, ta lấy c chia cho a rồi nhân với 100 (hoặc lấy c chia cho a%):\nSố cần tìm = (c x 100) / a.\nVí dụ: Lãi suất tiết kiệm ngân hàng là 6% một năm. Sau một năm, bác Nam nhận được 18.000.000 đồng tiền lãi.\nSố tiền bác Nam gửi tiết kiệm ban đầu là: (18.000.000 x 100) / 6 = 300.000.000 đồng."
+  },
+  {
+    "page": 25,
+    "section": "hinh_hoc_truc_quan",
+    "title": "Tam giác đều, Hình vuông và Lục giác đều",
+    "text": "### 1. Tam giác đều\nTam giác đều là tam giác có 3 cạnh bằng nhau và 3 góc bằng nhau. Mỗi góc của tam giác đều bằng 60°.\nBa đỉnh của tam giác đều cách đều tâm của nó.\n\n### 2. Hình vuông\nHình vuông là tứ giác có 4 cạnh bằng nhau và 4 góc bằng nhau (mỗi góc là một góc vuông 90°).\nĐặc điểm hai đường chéo của hình vuông:\n- Hai đường chéo bằng nhau.\n- Hai đường chéo vuông góc với nhau tại trung điểm của mỗi đường.\n\n### 3. Lục giác đều\nLục giác đều là hình có 6 cạnh bằng nhau và 6 góc bằng nhau.\nHình lục giác đều được ghép từ 6 hình tam giác đều có cùng kích thước ghép lại chung đỉnh tại tâm.\nĐặc điểm đường chéo: Lục giác đều có 3 đường chéo chính bằng nhau và cùng cắt nhau tại trung điểm của mỗi đường chéo chính (tâm đối xứng)."
+  },
+  {
+    "page": 26,
+    "section": "hinh_hoc_truc_quan",
+    "title": "Hình chữ nhật và Hình thoi",
+    "text": "### 1. Hình chữ nhật\nHình chữ nhật là tứ giác có 4 góc vuông (mỗi góc 90°).\nĐặc điểm của hình chữ nhật:\n- Các cạnh đối diện song song và bằng nhau.\n- Hai đường chéo bằng nhau và cắt nhau tại trung điểm của mỗi đường.\n- Hình chữ nhật có 2 trục đối xứng (hai đường thẳng đi qua trung điểm các cặp cạnh đối diện).\n\n### 2. Hình thoi\nHình thoi là tứ giác có 4 cạnh bằng nhau.\nĐặc điểm của hình thoi:\n- Các cạnh đối diện song song với nhau.\n- Các góc đối diện bằng nhau.\n- Hai đường chéo của hình thoi vuông góc với nhau tại trung điểm của mỗi đường.\n- Hai đường chéo là hai trục đối xứng của hình thoi và là các tia phân giác của các góc trong hình thoi."
+  },
+  {
+    "page": 27,
+    "section": "hinh_hoc_truc_quan",
+    "title": "Hình bình hành và Hình thang cân",
+    "text": "### 1. Hình bình hành\nHình bình hành là tứ giác có các cặp cạnh đối song song.\nĐặc điểm của hình bình hành:\n- Các cạnh đối diện bằng nhau: AB = CD và AD = BC.\n- Các góc đối diện bằng nhau: Góc A = Góc C và Góc B = Góc D.\n- Hai đường chéo cắt nhau tại trung điểm của mỗi đường. Giao điểm hai đường chéo là tâm đối xứng của hình bình hành. Hình bình hành tổng quát không có trục đối xứng.\n\n### 2. Hình thang cân\nHình thang cân là hình thang có hai góc kề một đáy bằng nhau.\nĐặc điểm của hình thang cân:\n- Hai đáy song song với nhau.\n- Hai cạnh bên bằng nhau nhưng không song song (trừ trường hợp đặc biệt là hình chữ nhật).\n- Hai đường chéo bằng nhau.\n- Hình thang cân có 1 trục đối xứng duy nhất là đường thẳng đi qua trung điểm hai đáy."
+  },
+  {
+    "page": 28,
+    "section": "hinh_hoc_truc_quan",
+    "title": "Công thức tính Chu vi và Diện tích: Hình vuông, Chữ nhật, Bình hành, Thoi",
+    "text": "### 1. Chu vi và diện tích Hình vuông & Hình chữ nhật\n- Hình vuông cạnh a:\n  Chu vi: C = 4 x a.\n  Diện tích: S = a x a = a^2.\n- Hình chữ nhật có chiều dài a và chiều rộng b:\n  Chu vi: C = 2 x (a + b).\n  Diện tích: S = a x b.\n\n### 2. Chu vi và diện tích Hình bình hành & Hình thoi\n- Hình bình hành có cạnh đáy a, cạnh bên b và chiều cao tương ứng h:\n  Chu vi: C = 2 x (a + b).\n  Diện tích: S = a x h (đáy nhân với chiều cao tương ứng).\n- Hình thoi có cạnh a và độ dài hai đường chéo là d1, d2:\n  Chu vi: C = 4 x a.\n  Diện tích: S = (d1 x d2) / 2 (nửa tích độ dài hai đường chéo)."
+  },
+  {
+    "page": 29,
+    "section": "hinh_hoc_truc_quan",
+    "title": "Công thức tính Chu vi và Diện tích: Hình tam giác và Hình thang",
+    "text": "### 1. Chu vi và diện tích Hình tam giác\n- Chu vi hình tam giác có độ dài ba cạnh là a, b, c:\n  C = a + b + c.\n- Diện tích hình tam giác có độ dài cạnh đáy a và chiều cao tương ứng h:\n  S = (a x h) / 2 (bằng một nửa tích của cạnh đáy và chiều cao tương ứng).\n- Đối với tam giác vuông có hai cạnh góc vuông a và b: Diện tích S = (a x b) / 2.\n\n### 2. Chu vi và diện tích Hình thang\n- Chu vi hình thang có 4 cạnh độ dài a, b, c, d: C = a + b + c + d.\n- Diện tích hình thang có đáy lớn a, đáy nhỏ b và chiều cao h:\n  S = ((a + b) x h) / 2 (bằng tổng độ dài hai đáy nhân với chiều cao rồi chia cho 2)."
+  },
+  {
+    "page": 30,
+    "section": "hinh_hoc_truc_quan",
+    "title": "Hình có trục đối xứng và Hình có tâm đối xứng",
+    "text": "### 1. Hình có trục đối xứng\nĐường thẳng d được gọi là trục đối xứng của hình H nếu mỗi điểm của hình H lấy đối xứng qua d cũng thuộc hình H.\nVí dụ các hình có trục đối xứng:\n- Hình tròn có vô số trục đối xứng (mọi đường thẳng đi qua tâm đều là trục đối xứng).\n- Hình vuông có 4 trục đối xứng (2 đường chéo và 2 đường nối trung điểm các cạnh đối).\n- Tam giác đều có 3 trục đối xứng.\n- Hình chữ nhật có 2 trục đối xứng.\n- Hình thang cân có 1 trục đối xứng.\n\n### 2. Hình có tâm đối xứng\nĐiểm O được gọi là tâm đối xứng của hình H nếu mỗi điểm của hình H lấy đối xứng qua O cũng thuộc hình H.\nVí dụ các hình có tâm đối xứng:\n- Hình tròn có tâm đối xứng là tâm của đường tròn.\n- Hình bình hành, hình chữ nhật, hình vuông, hình thoi có tâm đối xứng là giao điểm của hai đường chéo.\n- Tam giác đều và hình thang cân không có tâm đối xứng."
+  },
+  {
+    "page": 31,
+    "section": "thong_ke_xac_suat",
+    "title": "Thu thập và tổ chức dữ liệu thống kê. Tính hợp lý của dữ liệu",
+    "text": "### 1. Thu thập và phân loại dữ liệu\nDữ liệu được thu thập qua nhiều phương pháp: Quan sát trực tiếp, làm thí nghiệm, lập phiếu khảo sát câu hỏi, phỏng vấn hoặc thu thập từ sách báo, niên giám thống kê, mạng internet.\nDữ liệu thống kê bao gồm hai loại chính:\n- Dữ liệu là số (dữ liệu định lượng): Chiều cao, cân nặng, nhiệt độ, điểm thi, số học sinh.\n- Dữ liệu không phải là số (dữ liệu định tính): Tên các món ăn ưa thích, xếp loại học lực (Giỏi, Khá, Trung bình), màu sắc, giới tính.\n\n### 2. Tính hợp lý của dữ liệu\nDữ liệu thu thập được cần phải kiểm tra tính hợp lý theo các tiêu chí:\n- Đúng phạm vi định dạng quy định (ví dụ: điểm thi phải nằm trong khoảng từ 0 đến 10).\n- Tổng các thành phần phải bằng tổng số đối tượng điều tra.\n- Các giá trị không thể vô lý trong thực tế (ví dụ: tuổi của học sinh lớp 6 không thể là 150 tuổi hoặc số âm)."
+  },
+  {
+    "page": 32,
+    "section": "thong_ke_xac_suat",
+    "title": "Bảng số liệu thống kê ban đầu và Bảng tần số",
+    "text": "### 1. Bảng số liệu thống kê ban đầu\nKhi điều tra về một vấn đề quan tâm, người điều tra ghi lại các số liệu thu thập được theo thứ tự thời gian vào bảng thống kê ban đầu.\nBảng thường gồm các cột ghi thông tin đối tượng và các tiêu chí khảo sát.\n\n### 2. Bảng thống kê tổng hợp và bảng tần số\nĐể dễ quan sát và so sánh, người ta tổng hợp dữ liệu từ bảng ban đầu vào bảng thống kê rút gọn:\n- Hàng thứ nhất ghi các nhóm hoặc giá trị khác nhau của dấu hiệu.\n- Hàng thứ hai ghi số lần xuất hiện (tần số) tương ứng của mỗi giá trị đó.\nTổng các tần số trong bảng phải bằng đúng kích thước của mẫu điều tra (tổng số đối tượng được khảo sát). Bảng này giúp nhận biết giá trị nào xuất hiện nhiều nhất, ít nhất."
+  },
+  {
+    "page": 33,
+    "section": "thong_ke_xac_suat",
+    "title": "Biểu đồ tranh: Cách đọc và ý nghĩa biểu tượng",
+    "text": "### 1. Khái niệm biểu đồ tranh\nBiểu đồ tranh là biểu đồ sử dụng các hình ảnh, biểu tượng (icon) để biểu diễn dữ liệu thống kê.\nBiểu đồ tranh thường được dùng khi dữ liệu đơn giản, giúp người xem dễ dàng hình dung và tạo sự hấp dẫn, trực quan.\n\n### 2. Quy tắc đọc và xây dựng biểu đồ tranh\n- Mỗi hình ảnh hoặc biểu tượng có thể đại diện cho một số lượng đối tượng cụ thể (ví dụ: một biểu tượng ngôi sao đại diện cho 10 học sinh, nửa ngôi sao đại diện cho 5 học sinh).\n- Phần chú giải ở cuối biểu đồ tranh quy định rõ giá trị của mỗi biểu tượng.\n- Để tính số lượng của một đối tượng: Ta đếm số biểu tượng rồi nhân với giá trị quy ước của một biểu tượng.\nVí dụ: Một biểu tượng cuốn sách thay cho 20 cuốn sách. Nếu nhóm A có 4 biểu tượng cuốn sách thì số sách nhóm A quyên góp được là: 4 x 20 = 80 cuốn sách."
+  },
+  {
+    "page": 34,
+    "section": "thong_ke_xac_suat",
+    "title": "Biểu đồ cột đơn và Biểu đồ cột kép",
+    "text": "### 1. Biểu đồ cột đơn\nBiểu đồ cột sử dụng các cột hình chữ nhật có cùng chiều rộng, đặt cách đều nhau trên trục nằm ngang để biểu diễn số liệu.\nChiều cao của mỗi cột biểu diễn số lượng (tần số) của đối tượng tương ứng trên trục thẳng đứng.\nBiểu đồ cột giúp so sánh nhanh chóng độ lớn giữa các đối tượng thống kê.\n\n### 2. Biểu đồ cột kép\nKhi muốn so sánh từng cặp đại lượng của hai nhóm đối tượng cùng loại (ví dụ: số học sinh nam và nữ của từng lớp, lượng mưa của hai năm liên tiếp), người ta dùng biểu đồ cột kép.\nTrong biểu đồ cột kép:\n- Các cột của hai nhóm đặt sát nhau để tiện so sánh trực diện.\n- Cột của mỗi nhóm được phân biệt bằng màu sắc hoặc hoa văn khác nhau.\n- Cần có phần chú giải rõ ràng màu nào đại diện cho nhóm đối tượng nào."
+  },
+  {
+    "page": 35,
+    "section": "thong_ke_xac_suat",
+    "title": "Kết quả có thể và Sự kiện trong thí nghiệm ngẫu nhiên",
+    "text": "### 1. Phép thử nghiệm ngẫu nhiên\nPhép thử ngẫu nhiên là một hoạt động hay thí nghiệm mà kết quả của nó không thể biết trước chắc chắn trước khi thực hiện, mặc dù ta biết trước tập hợp tất cả các kết quả có thể xảy ra.\nVí dụ: Tung một đồng xu hoặc gieo một con xúc xắc 6 mặt là các phép thử ngẫu nhiên.\nTập hợp tất cả các kết quả có thể:\n- Khi tung một đồng xu: Có 2 kết quả có thể là Xuất hiện mặt Sấp (S) hoặc Xuất hiện mặt Ngửa (N).\n- Khi gieo một con xúc xắc: Có 6 kết quả có thể là Xuất hiện mặt 1, 2, 3, 4, 5 hoặc 6 chấm.\n\n### 2. Sự kiện (Biến cố)\nMột sự kiện là một khẳng định về kết quả của phép thử ngẫu nhiên. Sau khi thực hiện phép thử, một sự kiện có thể xảy ra hoặc không xảy ra.\nCó ba loại sự kiện:\n- Sự kiện chắc chắn: Luôn luôn xảy ra khi thực hiện phép thử.\n- Sự kiện không thể: Không bao giờ xảy ra khi thực hiện phép thử.\n- Sự kiện ngẫu nhiên: Có thể xảy ra hoặc không xảy ra tùy thuộc vào kết quả của phép thử."
+  },
+  {
+    "page": 36,
+    "section": "thong_ke_xac_suat",
+    "title": "Xác suất thực nghiệm của một sự kiện",
+    "text": "### 1. Định nghĩa xác suất thực nghiệm\nKhi thực hiện một phép thử lặp đi lặp lại nhiều lần, tỉ số giữa số lần sự kiện E xuất hiện (k) và tổng số lần thực hiện phép thử (n) được gọi là xác suất thực nghiệm của sự kiện E:\nXác suất thực nghiệm = k / n = (Số lần xuất hiện sự kiện E) / (Tổng số lần thực hiện thí nghiệm).\nXác suất thực nghiệm luôn là một số nằm trong đoạn từ 0 đến 1 (hoặc từ 0% đến 100%).\n\n### 2. Ý nghĩa và tính chất\n- Khi số lần thực hiện phép thử n càng lớn, xác suất thực nghiệm của một sự kiện sẽ càng ổn định và tiến gần đến xác suất lý thuyết của sự kiện đó.\nVí dụ: Bạn Nam gieo một con xúc xắc 50 lần thì có 12 lần xuất hiện mặt 6 chấm.\nXác suất thực nghiệm của sự kiện 'Xuất hiện mặt 6 chấm' trong 50 lần gieo của Nam là: 12 / 50 = 6 / 25 = 0,24 (tức 24%)."
+  }
+]

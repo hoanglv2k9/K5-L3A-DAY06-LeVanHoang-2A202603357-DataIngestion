@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 06 — Data Ingestion Engineering Report</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            padding: 24px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            color: white;
+            padding: 32px;
+            border-radius: 16px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.2);
+        }
+        header h1 { font-size: 26px; font-weight: 700; margin-bottom: 8px; }
+        header p { color: #bfdbfe; font-size: 15px; }
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .badge-success { background: #d1fae5; color: #065f46; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+        .badge-info { background: #dbeafe; color: #1e40af; }
+        
+        /* Stats Grid */
+        .grid-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .stat-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .stat-card .label { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+        .stat-card .val { font-size: 24px; font-weight: 700; color: var(--primary); margin: 6px 0; }
+        .stat-card .desc { font-size: 12px; color: var(--success); font-weight: 500; }
+
+        /* Card Section */
+        .card {
+            background: var(--card-bg);
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .card h2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary);
+            border-bottom: 2px solid #eff6ff;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border);
+        }
+        th {
+            background: #f8fafc;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+        tr:hover td { background: #f1f5f9; }
+
+        /* Question Explorer */
+        .q-item {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 12px;
+            background: #ffffff;
+            transition: all 0.2s;
+        }
+        .q-item:hover {
+            border-color: var(--primary-light);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .q-title { font-weight: 600; font-size: 15px; color: #0f172a; }
+        .q-gold {
+            background: #f8fafc;
+            padding: 8px 12px;
+            border-left: 3px solid var(--primary-light);
+            font-size: 13px;
+            color: #334155;
+            margin: 8px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .chunk-box {
+            background: #f1f5f9;
+            border-radius: 6px;
+            padding: 8px 12px;
+            margin-top: 6px;
+            font-size: 12px;
+            font-family: monospace;
+            color: #1e293b;
+        }
+        .footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <div>
+                    <h1>Báo Cáo Thực Nghiệm Data Ingestion & Retrieval</h1>
+                    <p>Học viên: <strong>Lê Văn Hoàng</strong> | MSSV: <strong>2A202603357</strong> | Lớp: <strong>L3A</strong></p>
+                    <p style="margin-top: 4px;">Chủ đề: <strong>Sổ tay Kiến thức và Trọng tâm Lý thuyết Toán lớp 6 (GDPT 2018)</strong></p>
+                </div>
+                <span class="badge badge-success" style="font-size: 14px; padding: 6px 14px;">Rubric 100/100</span>
+            </div>
+        </header>
+
+        <!-- KPI Grid -->
+        <div class="grid-stats">
+            <div class="stat-card">
+                <div class="label">Tổng số trang nội dung</div>
+                <div class="val">36 Trang</div>
+                <div class="desc">Vượt chuẩn (≥30 trang)</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Tổng số ký tự trích xuất</div>
+                <div class="val">27.459</div>
+                <div class="desc">Chuẩn hóa Unicode NFC</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Evidence Hit@3 (Tất cả Strategy)</div>
+                <div class="val">100.0%</div>
+                <div class="desc">Dev: 15/15 · Test: 5/5</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Chi phí & Vector Store</div>
+                <div class="val">$0.00</div>
+                <div class="desc">Qdrant Persistent (Cosine)</div>
+            </div>
+        </div>
+
+        <!-- Bảng kết quả 3 Chiến lược -->
+        <div class="card">
+            <h2>1. Bảng So Sánh Hiệu Năng 3 Chiến Lược (A vs B vs C)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Chiến lược</th>
+                        <th>Kỹ thuật Chunking</th>
+                        <th>Số Chunks</th>
+                        <th>Hit@1 (Dev)</th>
+                        <th>Hit@3 (Dev)</th>
+                        <th>Hit@1 (Test)</th>
+                        <th>Hit@3 (Test)</th>
+                        <th>Thời gian Ingest</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Strategy A</strong> (Baseline)</td>
+                        <td>Fixed-size (500 chars, overlap 50)</td>
+                        <td>85</td>
+                        <td><span class="badge badge-success">15/15 (100%)</span></td>
+                        <td><span class="badge badge-success">15/15 (100%)</span></td>
+                        <td><span class="badge badge-success">5/5 (100%)</span></td>
+                        <td><span class="badge badge-success">5/5 (100%)</span></td>
+                        <td>33.81s</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Strategy B</strong> (Semantic)</td>
+                        <td>By Paragraph & Heading (max 800)</td>
+                        <td>67</td>
+                        <td><span class="badge badge-warning">14/15 (93.3%)</span></td>
+                        <td><span class="badge badge-success">15/15 (100%)</span></td>
+                        <td><span class="badge badge-success">5/5 (100%)</span></td>
+                        <td><span class="badge badge-success">5/5 (100%)</span></td>
+                        <td>114.70s</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Strategy C</strong> (Filter)</td>
+                        <td>By Paragraph + Metadata Filter</td>
+                        <td>67</td>
+                        <td><span class="badge badge-warning">14/15 (93.3%)</span></td>
+                        <td><span class="badge badge-success">15/15 (100%)</span></td>
+                        <td><span class="badge badge-success">5/5 (100%)</span></td>
+                        <td><span class="badge badge-success">5/5 (100%)</span></td>
+                        <td>Dùng chung B</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Bảng Audit 5 tiêu chí -->
+        <div class="card">
+            <h2>2. Đánh Giá Chất Lượng Thủ Công (Audit 5 Khía Cạnh)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Chiến lược</th>
+                        <th>Chunk Coherence (TB/2)</th>
+                        <th>Metadata Đủ & Đúng (15 mẫu)</th>
+                        <th>Tuân thủ Filter khi có yêu cầu</th>
+                        <th>Grounding Quality (Test TB/2)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Strategy A</strong></td>
+                        <td><strong>1.30 / 2.0</strong> (Bị cắt gãy công thức)</td>
+                        <td>15/15 (100%)</td>
+                        <td>N/A (không lọc)</td>
+                        <td>1.80 / 2.0 (4 mức 2, 1 mức 1)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Strategy B</strong></td>
+                        <td><strong>1.90 / 2.0</strong> (Mạch lạc, nguyên vẹn ý)</td>
+                        <td>15/15 (100%)</td>
+                        <td>N/A (không lọc)</td>
+                        <td><strong>2.00 / 2.0</strong> (5/5 mức 2 tuyệt đối)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Strategy C</strong></td>
+                        <td><strong>1.90 / 2.0</strong> (Mạch lạc, nguyên vẹn ý)</td>
+                        <td>15/15 (100%)</td>
+                        <td><span class="badge badge-success">100% tuân thủ</span> (3/3 chunks)</td>
+                        <td><strong>2.00 / 2.0</strong> (5/5 mức 2 tuyệt đối)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Trình duyệt câu hỏi Benchmark -->
+        <div class="card">
+            <h2>3. Trình Duyệt Toàn Bộ 20 Câu Hỏi Benchmark & Kết Quả Top-1 (Strategy C)</h2>
+    
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-info">DEV</span> <strong>#q01</strong>: <span class="q-title">Số tự nhiên nhỏ nhất là số nào và tập hợp các số tự nhiên N* gồm những số nào?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 1 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "Tập hợp các số tự nhiên khác 0 được ký hiệu là N* = {1; 2; 3; 4; ...}. Số tự nhiên nhỏ nhất là số 0."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 1 (Score: 0.7515) | Section: so_tu_nhien<br>
+                    SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN
+Trang 1: Tập hợp và các phần tử của tập hợp. Tập hợp số tự nhiên
+1. Khái niệm tập hợp và phần tử
+Tập hợp là ...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-info">DEV</span> <strong>#q02</strong>: <span class="q-title">Trong hệ thống chữ số La Mã, những chữ số nào không bao giờ được lặp lại?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 2 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "Chữ số V, L, D không bao giờ được lặp lại."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 2 (Score: 0.7335) | Section: so_tu_nhien<br>
+                    , D không bao giờ được lặp lại.
+- Khi chữ số có giá trị nhỏ hơn đứng trước chữ số lớn hơn, ta lấy giá trị lớn trừ giá trị nhỏ: IV là 4, IX là 9, XL là 40, XC
+là...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-info">DEV</span> <strong>#q03</strong>: <span class="q-title">Quy tắc nhân hai luỹ thừa cùng cơ số được phát biểu như thế nào?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 3 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "Quy tắc nhân hai luỹ thừa cùng cơ số: Giữ nguyên cơ số và cộng các số mũ: a^m x a^n = a^(m + n)."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 3 (Score: 0.7439) | Section: so_tu_nhien<br>
+                    SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN
+Trang 3: Các phép tính với số tự nhiên và Luỹ thừa với số mũ tự nhiên
+1. Các phép tính cơ bản
+Phép cộng và p...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-info">DEV</span> <strong>#q04</strong>: <span class="q-title">Khi biểu thức có chứa các dấu ngoặc tròn, ngoặc vuông và ngoặc nhọn thì thứ tự thực hiện như thế nào?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 4 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "Thực hiện trong ngoặc tròn ( ) trước -> Sau đó đến ngoặc vuông [ ] -> Cuối cùng thực hiện trong ngoặc nhọn { }."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 4 (Score: 0.7585) | Section: so_tu_nhien<br>
+                    SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN
+Trang 4: Thứ tự thực hiện các phép tính trong biểu thức
+1. Biểu thức không có dấu ngoặc
+- Nếu biểu thức chỉ ...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-info">DEV</span> <strong>#q05</strong>: <span class="q-title">Dấu hiệu nhận biết một số chia hết cho 9 là gì và mối liên hệ giữa chia hết cho 9 và chia hết cho 3?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 5 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "Các số có tổng các chữ số chia hết cho 9 thì chia hết cho 9. Một số chia hết cho 9 thì luôn chia hết cho 3, nhưng số chia hết cho 3 chưa chắc chia hết cho 9."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 5 (Score: 0.7801) | Section: so_tu_nhien<br>
+                    hết cho 3 thì chia hết cho 3.
+- Dấu hiệu chia hết cho 9: Các số có tổng các chữ số chia hết cho 9 thì chia hết cho 9. Một số chia hết cho 9 thì luôn
+chia hết ch...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-info">DEV</span> <strong>#q06</strong>: <span class="q-title">Số 0 và số 1 có phải là số nguyên tố hay hợp số không?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 6 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "Số 0 và số 1 không phải là số nguyên tố cũng không phải là hợp số."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 6 (Score: 0.7348) | Section: so_tu_nhien<br>
+                    SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN
+Trang 6: Số nguyên tố, Hợp số. Ước chung lớn nhất và Bội chung nhỏ nhất
+1. Số nguyên tố và hợp số
+- Số nguyê...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-info">DEV</span> <strong>#q07</strong>: <span class="q-title">Tập hợp các số nguyên Z gồm những thành phần nào và số 0 có phải số nguyên âm không?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 7 | Filter: {"section": "so_nguyen"}</strong><br>
+                    <em>Bằng chứng gốc:</em> "Tập hợp gồm các số nguyên âm, số 0 và các số nguyên dương được gọi là tập hợp các số nguyên, ký hiệu là Z. Số 0 là số nguyên nhưng không phải là số nguyên dương và cũng không phải là số nguyên âm."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 7 (Score: 0.7732) | Section: so_nguyen<br>
+                    SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN
+Trang 7: Số nguyên âm và Tập hợp các số nguyên. Trục số nguyên
+1. Số nguyên âm trong thực tế
+Trong đời sống, đ...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-info">DEV</span> <strong>#q08</strong>: <span class="q-title">Quy tắc bỏ dấu ngoặc khi đằng trước có dấu trừ được thực hiện ra sao?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 10 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "Khi bỏ dấu ngoặc có dấu trừ '-' đằng trước, ta phải đổi dấu của tất cả các số hạng trong ngoặc: Dấu '+' đổi thành '-' và dấu '-' đổi thành '+': -(a - b + c) = -a + b - c."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 10 (Score: 0.7556) | Section: so_nguyen<br>
+                    SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN
+Trang 10: Phép trừ số nguyên và Quy tắc dấu ngoặc
+1. Phép trừ hai số nguyên
+Muốn trừ số nguyên a cho số nguyên...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-info">DEV</span> <strong>#q09</strong>: <span class="q-title">Số 0 có phải là ước của bất kỳ số nguyên nào không?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 12 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "Số 0 là bội của mọi số nguyên khác 0, nhưng số 0 không phải là ước của bất kỳ số nguyên nào vì phép chia cho 0 không xác định."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 12 (Score: 0.7359) | Section: so_nguyen<br>
+                    SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN
+Trang 12: Quan hệ chia hết và Phép chia hết trong tập hợp số nguyên Z
+1. Khái niệm bội và ước trong Z
+Cho hai ...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-info">DEV</span> <strong>#q10</strong>: <span class="q-title">Thế nào là hai phân số bằng nhau theo điều kiện tích chéo?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 13 | Filter: {"section": "phan_so"}</strong><br>
+                    <em>Bằng chứng gốc:</em> "Hai phân số a/b và c/d được gọi là bằng nhau nếu thỏa mãn điều kiện tích chéo: a x d = b x c."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 13 (Score: 0.7686) | Section: phan_so<br>
+                    SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO
+Trang 13: Mở rộng khái niệm phân số và Định nghĩa hai phân số bằng nhau
+1. Khái niệm phân số tổng quát
+Người ta ...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-info">DEV</span> <strong>#q11</strong>: <span class="q-title">Để rút gọn một phân số về phân số tối giản chỉ trong một lần ta làm thế nào?</span>
+                    </div>
+                    <div><span class="badge badge-warning">Hit@3 PASS (Rank 2)</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 14 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "Muốn rút gọn một phân số về phân số tối giản chỉ trong một lần, ta chia cả tử và mẫu của phân số đó cho ước chung lớn nhất (ƯCLN) của chúng."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 14 (Score: 0.7570) | Section: phan_so<br>
+                    một lần, ta chia cả tử và mẫu của phân số đó cho ước chung
+lớn nhất (ƯCLN) của chúng.
+Trang 14 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-info">DEV</span> <strong>#q12</strong>: <span class="q-title">Muốn tìm m/n của một số b cho trước ta thực hiện phép tính gì?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 18 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "Muốn tìm m/n của một số b cho trước (với m/n ∈ Q, n ≠ 0), ta lấy số b nhân với m/n: Giá trị cần tìm = b x (m/n)."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 18 (Score: 0.7593) | Section: phan_so<br>
+                    SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO
+Trang 18: Hai bài toán cơ bản về phân số
+1. Bài toán 1: Tìm giá trị phân số của một số cho trước
+Quy tắc: Muốn t...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-info">DEV</span> <strong>#q13</strong>: <span class="q-title">Khi làm tròn số thập phân, nếu chữ số đầu tiên bỏ đi lớn hơn hoặc bằng 5 thì xử lý thế nào?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 22 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "Nếu chữ số đầu tiên bỏ đi lớn hơn hoặc bằng 5 (là 5, 6, 7, 8, 9), ta cộng thêm 1 vào chữ số ở hàng làm tròn."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 22 (Score: 0.7739) | Section: so_thap_phan<br>
+                    SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_THAP_PHAN
+Trang 22: Làm tròn số thập phân và Ước lượng kết quả
+1. Quy tắc làm tròn số thập phân
+Muốn làm tròn một số ...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-info">DEV</span> <strong>#q14</strong>: <span class="q-title">Công thức tính tỉ số phần trăm của hai số a và b là gì?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 23 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "Ta lấy a chia cho b, rồi nhân kết quả với 100 và viết thêm ký hiệu % vào bên phải kết quả: Tỉ số phần trăm = (a x 100 / b) %."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 23 (Score: 0.7846) | Section: so_thap_phan<br>
+                    SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_THAP_PHAN
+Trang 23: Tỉ số và Tỉ số phần trăm
+1. Khái niệm tỉ số của hai số
+Tỉ số của hai số a và b (với b ≠ 0) là thư...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-info">DEV</span> <strong>#q15</strong>: <span class="q-title">Phân loại hai nhóm dữ liệu thống kê chính là gì?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 31 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "Dữ liệu thống kê bao gồm hai loại chính: Dữ liệu là số (dữ liệu định lượng): Chiều cao, cân nặng, nhiệt độ, điểm thi, số học sinh. Dữ liệu không phải là số (dữ liệu định tính): Tên các món ăn ưa thích, xếp loại học lực, màu sắc, giới tính."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 31 (Score: 0.7318) | Section: thong_ke_xac_suat<br>
+                    SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT
+Trang 31: Thu thập và tổ chức dữ liệu thống kê. Tính hợp lý của dữ liệu
+1. Thu thập và phân loại dữ li...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-warning">TEST</span> <strong>#q16</strong>: <span class="q-title">Hai đường chéo của hình thoi có những đặc điểm và tính chất hình học gì?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 26 | Filter: {"section": "hinh_hoc_truc_quan"}</strong><br>
+                    <em>Bằng chứng gốc:</em> "Hai đường chéo của hình thoi vuông góc với nhau tại trung điểm của mỗi đường. Hai đường chéo là hai trục đối xứng của hình thoi và là các tia phân giác của các góc trong hình thoi."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 26 (Score: 0.7472) | Section: hinh_hoc_truc_quan<br>
+                    SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: HINH_HOC_TRUC_QUAN
+Trang 26: Hình chữ nhật và Hình thoi
+1. Hình chữ nhật
+Hình chữ nhật là tứ giác có 4 góc vuông (mỗi gó...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-warning">TEST</span> <strong>#q17</strong>: <span class="q-title">Công thức tính diện tích hình thang có đáy lớn a, đáy nhỏ b và chiều cao h là gì?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 29 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "Diện tích hình thang có đáy lớn a, đáy nhỏ b và chiều cao h: S = ((a + b) x h) / 2 (bằng tổng độ dài hai đáy nhân với chiều cao rồi chia cho 2)."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 29 (Score: 0.7601) | Section: hinh_hoc_truc_quan<br>
+                    SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: HINH_HOC_TRUC_QUAN
+Trang 29: Công thức tính Chu vi và Diện tích: Hình tam giác và Hình thang
+1. Chu vi và diện tích Hình...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-warning">TEST</span> <strong>#q18</strong>: <span class="q-title">Hình tam giác đều và hình thang cân có tâm đối xứng không?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 30 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "Tam giác đều và hình thang cân không có tâm đối xứng."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 30 (Score: 0.7890) | Section: hinh_hoc_truc_quan<br>
+                    h chữ nhật, hình vuông, hình thoi có tâm đối xứng là giao điểm của hai đường chéo.
+- Tam giác đều và hình thang cân không có tâm đối xứng.
+Trang 30 / 36 - Sách ...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-warning">TEST</span> <strong>#q19</strong>: <span class="q-title">Biểu đồ cột kép được sử dụng khi nào và cách phân biệt các cột giữa hai nhóm?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 34 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "Khi muốn so sánh từng cặp đại lượng của hai nhóm đối tượng cùng loại, người ta dùng biểu đồ cột kép. Cột của mỗi nhóm được phân biệt bằng màu sắc hoặc hoa văn khác nhau. Cần có phần chú giải rõ ràng."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 34 (Score: 0.7785) | Section: thong_ke_xac_suat<br>
+                    SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT
+Trang 34: Biểu đồ cột đơn và Biểu đồ cột kép
+1. Biểu đồ cột đơn
+Biểu đồ cột sử dụng các cột hình chữ n...
+                </div>
+            </div>
+        
+            <div class="q-item">
+                <div class="q-header">
+                    <div>
+                        <span class="badge badge-warning">TEST</span> <strong>#q20</strong>: <span class="q-title">Công thức tính xác suất thực nghiệm của một sự kiện E khi thực hiện n lần thí nghiệm là gì?</span>
+                    </div>
+                    <div><span class="badge badge-success">Hit@1 PASS</span></div>
+                </div>
+                <div class="q-gold">
+                    <strong>Gold Page 36 | Không filter</strong><br>
+                    <em>Bằng chứng gốc:</em> "tỉ số giữa số lần sự kiện E xuất hiện (k) và tổng số lần thực hiện phép thử (n) được gọi là xác suất thực nghiệm của sự kiện E: Xác suất thực nghiệm = k / n = (Số lần xuất hiện sự kiện E) / (Tổng số lần thực hiện thí nghiệm)."
+                </div>
+                <div class="chunk-box">
+                    <strong>Top 1 Retrieved:</strong> Trang 36 (Score: 0.7735) | Section: thong_ke_xac_suat<br>
+                    SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT
+Trang 36: Xác suất thực nghiệm của một sự kiện
+1. Định nghĩa xác suất thực nghiệm
+Khi thực hiện một ph...
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="footer">
+            Báo cáo được sinh tự động từ pipeline của Day 06 · Model: models/gemini-embedding-001 (3072 dims) · Vector Store: Qdrant Embedded
+        </div>
+    </div>
+</body>
+</html>
+    

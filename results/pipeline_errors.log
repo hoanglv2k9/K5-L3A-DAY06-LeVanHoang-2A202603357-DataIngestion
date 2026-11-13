@@ -1,0 +1,405 @@
+[2026-11-13 17:52:27] [ERROR] [embed_documents batch 0 (lần 1)]: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0, description: Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.
+Please retry in 32.767333803s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://aistudio.google.com/docs/rate-limits"
+}
+, violations {
+  description: "Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits."
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-1.0"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 100
+}
+, retry_delay {
+  seconds: 32
+}
+]
+Traceback (most recent call last):
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\grpc_helpers.py", line 55, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_interceptor.py", line 276, in __call__
+    response, ignored_call = self._with_call(
+                             ~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_interceptor.py", line 331, in _with_call
+    return call.result(), call
+           ~~~~~~~~~~~^^
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_channel.py", line 447, in result
+    raise self
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_interceptor.py", line 314, in continuation
+    response, call = self._thunk(new_method).with_call(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=new_compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_channel.py", line 1182, in with_call
+    return _end_unary_response_blocking(state, call, True, None)
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_channel.py", line 999, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.RESOURCE_EXHAUSTED
+	details = "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0, description: Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.
+Please retry in 32.767333803s."
+	debug_error_string = "RESOURCE_EXHAUSTED:You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0, description: Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.
+Please retry in 32.767333803s."
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Student\Documents\aivin\K5-L3A-DAY06-LeVanHoang-2A202603357-DataIngestion\starter\src\embeddings.py", line 86, in embed_documents
+    res = self.genai.embed_content(
+        model=self.model_name,
+        content=batch,
+        task_type="retrieval_document"
+    )
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\generativeai\embedding.py", line 198, in embed_content
+    embedding_response = client.batch_embed_contents(
+        embedding_request,
+        **request_options,
+    )
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 1392, in batch_embed_contents
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\gapic_v1\method.py", line 128, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 295, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 157, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_base.py", line 215, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 148, in retry_target
+    result = target()
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\grpc_helpers.py", line 57, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0, description: Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.
+Please retry in 32.767333803s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://aistudio.google.com/docs/rate-limits"
+}
+, violations {
+  description: "Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits."
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-1.0"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 100
+}
+, retry_delay {
+  seconds: 32
+}
+]
+
+--------------------------------------------------
+[2026-11-13 17:52:33] [ERROR] [embed_documents batch 0 (lần 2)]: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0, description: Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.
+Please retry in 26.418017509s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://aistudio.google.com/docs/rate-limits"
+}
+, violations {
+  description: "Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits."
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-1.0"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 100
+}
+, retry_delay {
+  seconds: 26
+}
+]
+Traceback (most recent call last):
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\grpc_helpers.py", line 55, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_interceptor.py", line 276, in __call__
+    response, ignored_call = self._with_call(
+                             ~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_interceptor.py", line 331, in _with_call
+    return call.result(), call
+           ~~~~~~~~~~~^^
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_channel.py", line 447, in result
+    raise self
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_interceptor.py", line 314, in continuation
+    response, call = self._thunk(new_method).with_call(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=new_compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_channel.py", line 1182, in with_call
+    return _end_unary_response_blocking(state, call, True, None)
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_channel.py", line 999, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.RESOURCE_EXHAUSTED
+	details = "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0, description: Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.
+Please retry in 26.418017509s."
+	debug_error_string = "RESOURCE_EXHAUSTED:You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0, description: Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.
+Please retry in 26.418017509s."
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Student\Documents\aivin\K5-L3A-DAY06-LeVanHoang-2A202603357-DataIngestion\starter\src\embeddings.py", line 86, in embed_documents
+    res = self.genai.embed_content(
+        model=self.model_name,
+        content=batch,
+        task_type="retrieval_document"
+    )
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\generativeai\embedding.py", line 198, in embed_content
+    embedding_response = client.batch_embed_contents(
+        embedding_request,
+        **request_options,
+    )
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 1392, in batch_embed_contents
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\gapic_v1\method.py", line 128, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 295, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 157, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_base.py", line 215, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 148, in retry_target
+    result = target()
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\grpc_helpers.py", line 57, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0, description: Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.
+Please retry in 26.418017509s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://aistudio.google.com/docs/rate-limits"
+}
+, violations {
+  description: "Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits."
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-1.0"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 100
+}
+, retry_delay {
+  seconds: 26
+}
+]
+
+--------------------------------------------------
+[2026-11-13 17:52:39] [ERROR] [embed_documents batch 0 (lần 3)]: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0, description: Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.
+Please retry in 20.014487908s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://aistudio.google.com/docs/rate-limits"
+}
+, violations {
+  description: "Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits."
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-1.0"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 100
+}
+, retry_delay {
+  seconds: 20
+}
+]
+Traceback (most recent call last):
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\grpc_helpers.py", line 55, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_interceptor.py", line 276, in __call__
+    response, ignored_call = self._with_call(
+                             ~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_interceptor.py", line 331, in _with_call
+    return call.result(), call
+           ~~~~~~~~~~~^^
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_channel.py", line 447, in result
+    raise self
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_interceptor.py", line 314, in continuation
+    response, call = self._thunk(new_method).with_call(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=new_compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_channel.py", line 1182, in with_call
+    return _end_unary_response_blocking(state, call, True, None)
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\grpc\_channel.py", line 999, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.RESOURCE_EXHAUSTED
+	details = "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0, description: Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.
+Please retry in 20.014487908s."
+	debug_error_string = "RESOURCE_EXHAUSTED:You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0, description: Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.
+Please retry in 20.014487908s."
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Student\Documents\aivin\K5-L3A-DAY06-LeVanHoang-2A202603357-DataIngestion\starter\src\embeddings.py", line 86, in embed_documents
+    res = self.genai.embed_content(
+        model=self.model_name,
+        content=batch,
+        task_type="retrieval_document"
+    )
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\generativeai\embedding.py", line 198, in embed_content
+    embedding_response = client.batch_embed_contents(
+        embedding_request,
+        **request_options,
+    )
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 1392, in batch_embed_contents
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\gapic_v1\method.py", line 128, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 295, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 157, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_base.py", line 215, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 148, in retry_target
+    result = target()
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\grpc_helpers.py", line 57, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0, description: Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.
+Please retry in 20.014487908s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://aistudio.google.com/docs/rate-limits"
+}
+, violations {
+  description: "Embed content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits."
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-1.0"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 100
+}
+, retry_delay {
+  seconds: 20
+}
+]
+
+--------------------------------------------------

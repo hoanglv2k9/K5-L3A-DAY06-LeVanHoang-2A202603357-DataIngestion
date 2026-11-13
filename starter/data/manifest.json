@@ -1,0 +1,115 @@
+{
+  "source_id": "toan-6-gdpt2018",
+  "title": "Sổ tay Kiến thức và Trọng tâm Lý thuyết Toán lớp 6 (Chương trình GDPT 2018)",
+  "source_path_or_url": "starter/data/toan_6_tap_1_va_2_gdpt2018.json",
+  "license_or_permission": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+  "accessed_at": "2026-11-13",
+  "total_pages": 36,
+  "page_list": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "total_characters": 27459,
+  "sections": {
+    "so_tu_nhien": {
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "description": "Số tự nhiên, phép tính, chia hết, số nguyên tố"
+    },
+    "so_nguyen": {
+      "pages": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "description": "Số nguyên âm, cộng trừ nhân chia Z, quy tắc dấu"
+    },
+    "phan_so": {
+      "pages": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "description": "Khái niệm phân số, rút gọn, quy đồng, phép tính, 2 bài toán phân số"
+    },
+    "so_thap_phan": {
+      "pages": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "description": "Số thập phân, làm tròn, tỉ số và tỉ số phần trăm"
+    },
+    "hinh_hoc_truc_quan": {
+      "pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "description": "Các hình phẳng trực quan, chu vi diện tích, đối xứng"
+    },
+    "thong_ke_xac_suat": {
+      "pages": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "description": "Thu thập dữ liệu, biểu đồ tranh, biểu đồ cột, xác suất thực nghiệm"
+    }
+  }
+}

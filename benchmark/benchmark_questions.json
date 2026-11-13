@@ -1,0 +1,228 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Số tự nhiên nhỏ nhất là số nào và tập hợp các số tự nhiên N* gồm những số nào?",
+    "expected_answer": "Số tự nhiên nhỏ nhất là số 0. Tập hợp N* gồm các số tự nhiên khác 0: N* = {1; 2; 3; 4; ...}.",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 1,
+    "evidence_quote": "Tập hợp các số tự nhiên khác 0 được ký hiệu là N* = {1; 2; 3; 4; ...}. Số tự nhiên nhỏ nhất là số 0.",
+    "filter": null
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Trong hệ thống chữ số La Mã, những chữ số nào không bao giờ được lặp lại?",
+    "expected_answer": "Chữ số V, L, D không bao giờ được lặp lại.",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 2,
+    "evidence_quote": "Chữ số V, L, D không bao giờ được lặp lại.",
+    "filter": null
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "type": "cong_thuc",
+    "question": "Quy tắc nhân hai luỹ thừa cùng cơ số được phát biểu như thế nào?",
+    "expected_answer": "Giữ nguyên cơ số và cộng các số mũ: a^m x a^n = a^(m + n).",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 3,
+    "evidence_quote": "Quy tắc nhân hai luỹ thừa cùng cơ số: Giữ nguyên cơ số và cộng các số mũ: a^m x a^n = a^(m + n).",
+    "filter": null
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "type": "thu_tu_tinh",
+    "question": "Khi biểu thức có chứa các dấu ngoặc tròn, ngoặc vuông và ngoặc nhọn thì thứ tự thực hiện như thế nào?",
+    "expected_answer": "Thực hiện trong ngoặc tròn ( ) trước, sau đó đến ngoặc vuông [ ], cuối cùng trong ngoặc nhọn { }.",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 4,
+    "evidence_quote": "Thực hiện trong ngoặc tròn ( ) trước -> Sau đó đến ngoặc vuông [ ] -> Cuối cùng thực hiện trong ngoặc nhọn { }.",
+    "filter": null
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "type": "dieu_kien",
+    "question": "Dấu hiệu nhận biết một số chia hết cho 9 là gì và mối liên hệ giữa chia hết cho 9 và chia hết cho 3?",
+    "expected_answer": "Các số có tổng các chữ số chia hết cho 9 thì chia hết cho 9. Một số chia hết cho 9 thì luôn chia hết cho 3.",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 5,
+    "evidence_quote": "Các số có tổng các chữ số chia hết cho 9 thì chia hết cho 9. Một số chia hết cho 9 thì luôn chia hết cho 3, nhưng số chia hết cho 3 chưa chắc chia hết cho 9.",
+    "filter": null
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "type": "dinh_nghia",
+    "question": "Số 0 và số 1 có phải là số nguyên tố hay hợp số không?",
+    "expected_answer": "Số 0 và số 1 không phải là số nguyên tố cũng không phải là hợp số.",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 6,
+    "evidence_quote": "Số 0 và số 1 không phải là số nguyên tố cũng không phải là hợp số.",
+    "filter": null
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Tập hợp các số nguyên Z gồm những thành phần nào và số 0 có phải số nguyên âm không?",
+    "expected_answer": "Tập hợp số nguyên Z gồm các số nguyên âm, số 0 và các số nguyên dương. Số 0 không phải số nguyên dương và cũng không phải số nguyên âm.",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 7,
+    "evidence_quote": "Tập hợp gồm các số nguyên âm, số 0 và các số nguyên dương được gọi là tập hợp các số nguyên, ký hiệu là Z. Số 0 là số nguyên nhưng không phải là số nguyên dương và cũng không phải là số nguyên âm.",
+    "filter": {
+      "section": "so_nguyen"
+    }
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "type": "quy_tac",
+    "question": "Quy tắc bỏ dấu ngoặc khi đằng trước có dấu trừ được thực hiện ra sao?",
+    "expected_answer": "Phải đổi dấu tất cả các số hạng trong ngoặc: dấu '+' đổi thành '-' và dấu '-' đổi thành '+': -(a - b + c) = -a + b - c.",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 10,
+    "evidence_quote": "Khi bỏ dấu ngoặc có dấu trừ '-' đằng trước, ta phải đổi dấu của tất cả các số hạng trong ngoặc: Dấu '+' đổi thành '-' và dấu '-' đổi thành '+': -(a - b + c) = -a + b - c.",
+    "filter": null
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "type": "ngoai_le",
+    "question": "Số 0 có phải là ước của bất kỳ số nguyên nào không?",
+    "expected_answer": "Số 0 không phải là ước của bất kỳ số nguyên nào vì phép chia cho 0 không xác định.",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 12,
+    "evidence_quote": "Số 0 là bội của mọi số nguyên khác 0, nhưng số 0 không phải là ước của bất kỳ số nguyên nào vì phép chia cho 0 không xác định.",
+    "filter": null
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Thế nào là hai phân số bằng nhau theo điều kiện tích chéo?",
+    "expected_answer": "Hai phân số a/b và c/d bằng nhau nếu tích chéo a x d = b x c.",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 13,
+    "evidence_quote": "Hai phân số a/b và c/d được gọi là bằng nhau nếu thỏa mãn điều kiện tích chéo: a x d = b x c.",
+    "filter": {
+      "section": "phan_so"
+    }
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "type": "phuong_phap",
+    "question": "Để rút gọn một phân số về phân số tối giản chỉ trong một lần ta làm thế nào?",
+    "expected_answer": "Chia cả tử và mẫu của phân số đó cho ước chung lớn nhất (ƯCLN) của chúng.",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 14,
+    "evidence_quote": "Muốn rút gọn một phân số về phân số tối giản chỉ trong một lần, ta chia cả tử và mẫu của phân số đó cho ước chung lớn nhất (ƯCLN) của chúng.",
+    "filter": null
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "type": "bai_toan",
+    "question": "Muốn tìm m/n của một số b cho trước ta thực hiện phép tính gì?",
+    "expected_answer": "Lấy số b nhân với phân số m/n: Giá trị = b x (m/n).",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 18,
+    "evidence_quote": "Muốn tìm m/n của một số b cho trước (với m/n ∈ Q, n ≠ 0), ta lấy số b nhân với m/n: Giá trị cần tìm = b x (m/n).",
+    "filter": null
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "type": "quy_tac",
+    "question": "Khi làm tròn số thập phân, nếu chữ số đầu tiên bỏ đi lớn hơn hoặc bằng 5 thì xử lý thế nào?",
+    "expected_answer": "Cộng thêm 1 vào chữ số ở hàng làm tròn.",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 22,
+    "evidence_quote": "Nếu chữ số đầu tiên bỏ đi lớn hơn hoặc bằng 5 (là 5, 6, 7, 8, 9), ta cộng thêm 1 vào chữ số ở hàng làm tròn.",
+    "filter": null
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "type": "cong_thuc",
+    "question": "Công thức tính tỉ số phần trăm của hai số a và b là gì?",
+    "expected_answer": "Lấy a chia cho b rồi nhân kết quả với 100 và thêm ký hiệu %: (a x 100 / b) %.",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 23,
+    "evidence_quote": "Ta lấy a chia cho b, rồi nhân kết quả với 100 và viết thêm ký hiệu % vào bên phải kết quả: Tỉ số phần trăm = (a x 100 / b) %.",
+    "filter": null
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "type": "dinh_nghia",
+    "question": "Phân loại hai nhóm dữ liệu thống kê chính là gì?",
+    "expected_answer": "Dữ liệu là số (định lượng) và dữ liệu không phải là số (định tính).",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 31,
+    "evidence_quote": "Dữ liệu thống kê bao gồm hai loại chính: Dữ liệu là số (dữ liệu định lượng): Chiều cao, cân nặng, nhiệt độ, điểm thi, số học sinh. Dữ liệu không phải là số (dữ liệu định tính): Tên các món ăn ưa thích, xếp loại học lực, màu sắc, giới tính.",
+    "filter": null
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "type": "metadata_filter",
+    "question": "Hai đường chéo của hình thoi có những đặc điểm và tính chất hình học gì?",
+    "expected_answer": "Hai đường chéo của hình thoi vuông góc với nhau tại trung điểm của mỗi đường, là hai trục đối xứng của hình thoi và là các tia phân giác của các góc trong hình thoi.",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 26,
+    "evidence_quote": "Hai đường chéo của hình thoi vuông góc với nhau tại trung điểm của mỗi đường. Hai đường chéo là hai trục đối xứng của hình thoi và là các tia phân giác của các góc trong hình thoi.",
+    "filter": {
+      "section": "hinh_hoc_truc_quan"
+    }
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "type": "cong_thuc",
+    "question": "Công thức tính diện tích hình thang có đáy lớn a, đáy nhỏ b và chiều cao h là gì?",
+    "expected_answer": "S = ((a + b) x h) / 2 (tổng hai đáy nhân chiều cao rồi chia 2).",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 29,
+    "evidence_quote": "Diện tích hình thang có đáy lớn a, đáy nhỏ b và chiều cao h: S = ((a + b) x h) / 2 (bằng tổng độ dài hai đáy nhân với chiều cao rồi chia cho 2).",
+    "filter": null
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "type": "ngoai_le",
+    "question": "Hình tam giác đều và hình thang cân có tâm đối xứng không?",
+    "expected_answer": "Tam giác đều và hình thang cân không có tâm đối xứng.",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 30,
+    "evidence_quote": "Tam giác đều và hình thang cân không có tâm đối xứng.",
+    "filter": null
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "type": "so_sanh",
+    "question": "Biểu đồ cột kép được sử dụng khi nào và cách phân biệt các cột giữa hai nhóm?",
+    "expected_answer": "Dùng khi muốn so sánh từng cặp đại lượng của hai nhóm đối tượng cùng loại. Cột của mỗi nhóm phân biệt bằng màu sắc hoặc hoa văn khác nhau kèm phần chú giải.",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 34,
+    "evidence_quote": "Khi muốn so sánh từng cặp đại lượng của hai nhóm đối tượng cùng loại, người ta dùng biểu đồ cột kép. Cột của mỗi nhóm được phân biệt bằng màu sắc hoặc hoa văn khác nhau. Cần có phần chú giải rõ ràng.",
+    "filter": null
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "type": "cong_thuc",
+    "question": "Công thức tính xác suất thực nghiệm của một sự kiện E khi thực hiện n lần thí nghiệm là gì?",
+    "expected_answer": "Xác suất thực nghiệm = k / n = (Số lần xuất hiện sự kiện E) / (Tổng số lần thực hiện thí nghiệm).",
+    "gold_source_id": "toan-6-gdpt2018",
+    "gold_page": 36,
+    "evidence_quote": "tỉ số giữa số lần sự kiện E xuất hiện (k) và tổng số lần thực hiện phép thử (n) được gọi là xác suất thực nghiệm của sự kiện E: Xác suất thực nghiệm = k / n = (Số lần xuất hiện sự kiện E) / (Tổng số lần thực hiện thí nghiệm).",
+    "filter": null
+  }
+]

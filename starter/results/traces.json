@@ -1,0 +1,3626 @@
+{
+  "A": [
+    {
+      "question_id": "q01",
+      "question": "Số tự nhiên nhỏ nhất là số nào và tập hợp các số tự nhiên N* gồm những số nào?",
+      "split": "dev",
+      "type": "truc_tiep",
+      "gold_page": 1,
+      "gold_evidence": "Tập hợp các số tự nhiên khác 0 được ký hiệu là N* = {1; 2; 3; 4; ...}. Số tự nhiên nhỏ nhất là số 0.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p1_c1",
+          "score": 0.7541624022566822,
+          "page": 1,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "ta viết y A.\nMỗi phần tử chỉ được liệt kê một lần và thứ tự liệt kê các phần tử là tùy ý.\n2. Tập hợp số tự nhiên\nTập hợp các số tự nhiên được ký hiệu là N = {0;...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 950
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p1_c0",
+          "score": 0.6940565727836543,
+          "page": 1,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 1: Tập hợp và các phần tử của tập hợp. Tập hợp số tự nhiên\n1. Khái niệm tập hợp và phần tử\nTập hợp là ...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 499,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p6_c0",
+          "score": 0.6938053777496256,
+          "page": 6,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 6: Số nguyên tố, Hợp số. Ước chung lớn nhất và Bội chung nhỏ nhất\n1. Số nguyên tố và hợp số\n- Số nguyê...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 499,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q02",
+      "question": "Trong hệ thống chữ số La Mã, những chữ số nào không bao giờ được lặp lại?",
+      "split": "dev",
+      "type": "truc_tiep",
+      "gold_page": 2,
+      "gold_evidence": "Chữ số V, L, D không bao giờ được lặp lại.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p2_c1",
+          "score": 0.7394688045293222,
+          "page": 2,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "m có giá trị 200, chữ số 3 ở hàng chục có giá trị 30, chữ số 5 ở hàng đơn vị có giá\ntrị 5. Ta viết: 235 = 2 x 100 + 3 x 10 + 5.\n2. Chữ số La Mã\nHệ thống chữ số ...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 950
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p2_c2",
+          "score": 0.6875543126697079,
+          "page": 2,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "á trị lớn trừ giá trị nhỏ: IV là 4, IX là 9, XL là 40, XC\nlà 90.\nTrang 2 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 112,
+            "chunking_strategy": "fixed_size",
+            "start_char": 900,
+            "end_char": 1012
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p2_c0",
+          "score": 0.6828572684365406,
+          "page": 2,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 2: Cách ghi số tự nhiên. Hệ thập phân và chữ số La Mã\n1. Hệ thập phân\nĐể ghi số tự nhiên trong hệ thập...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 499,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q03",
+      "question": "Quy tắc nhân hai luỹ thừa cùng cơ số được phát biểu như thế nào?",
+      "split": "dev",
+      "type": "cong_thuc",
+      "gold_page": 3,
+      "gold_evidence": "Quy tắc nhân hai luỹ thừa cùng cơ số: Giữ nguyên cơ số và cộng các số mũ: a^m x a^n = a^(m + n).",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p3_c1",
+          "score": 0.7634174910102869,
+          "page": 3,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "Luỹ thừa bậc n của số tự nhiên a là tích của n thừa số bằng nhau, mỗi thừa số bằng a: a^n = a x a x ... x a (với n thừa\nsố a, n N*).\nSố a được gọi là cơ số, số ...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 481,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 932
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p3_c0",
+          "score": 0.7140478517596597,
+          "page": 3,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 3: Các phép tính với số tự nhiên và Luỹ thừa với số mũ tự nhiên\n1. Các phép tính cơ bản\nPhép cộng và p...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p11_c2",
+          "score": 0.6915658170499297,
+          "page": 11,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "rừ: a x (b + c) = a x b + a x c.\nTrang 11 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 81,
+            "chunking_strategy": "fixed_size",
+            "start_char": 900,
+            "end_char": 981
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q04",
+      "question": "Khi biểu thức có chứa các dấu ngoặc tròn, ngoặc vuông và ngoặc nhọn thì thứ tự thực hiện như thế nào?",
+      "split": "dev",
+      "type": "thu_tu_tinh",
+      "gold_page": 4,
+      "gold_evidence": "Thực hiện trong ngoặc tròn ( ) trước -> Sau đó đến ngoặc vuông [ ] -> Cuối cùng thực hiện trong ngoặc nhọn { }.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p4_c1",
+          "score": 0.8002807045255892,
+          "page": 4,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "u thức có chứa các dấu ngoặc khác nhau, thứ tự thực hiện các phép tính bên trong ngoặc là:\nThực hiện trong ngoặc tròn ( ) trước -> Sau đó đến ngoặc vuông [ ] ->...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 414,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 864
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p4_c0",
+          "score": 0.7328498473651051,
+          "page": 4,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 4: Thứ tự thực hiện các phép tính trong biểu thức\n1. Biểu thức không có dấu ngoặc\n- Nếu biểu thức chỉ ...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p22_c2",
+          "score": 0.6704414082638149,
+          "page": 22,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "ồi mới thực hiện phép tính nhẩm.\nTrang 22 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 81,
+            "chunking_strategy": "fixed_size",
+            "start_char": 900,
+            "end_char": 981
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q05",
+      "question": "Dấu hiệu nhận biết một số chia hết cho 9 là gì và mối liên hệ giữa chia hết cho 9 và chia hết cho 3?",
+      "split": "dev",
+      "type": "dieu_kien",
+      "gold_page": 5,
+      "gold_evidence": "Các số có tổng các chữ số chia hết cho 9 thì chia hết cho 9. Một số chia hết cho 9 thì luôn chia hết cho 3, nhưng số chia hết cho 3 chưa chắc chia hết cho 9.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p5_c2",
+          "score": 0.7680322589168644,
+          "page": 5,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "ì chia hết cho 9. Một số chia hết cho 9 thì luôn\nchia hết cho 3, nhưng số chia hết cho 3 chưa chắc chia hết cho 9.\nTrang 5 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4....",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 162,
+            "chunking_strategy": "fixed_size",
+            "start_char": 900,
+            "end_char": 1062
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p5_c1",
+          "score": 0.7484810742935682,
+          "page": 5,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "Dấu hiệu chia hết cho 2: Các số có chữ số tận cùng là chữ số chẵn (0, 2, 4, 6, 8) thì chia hết cho 2 và chỉ những số\nđó mới chia hết cho 2.\n- Dấu hiệu chia hết ...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 499,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 950
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p5_c0",
+          "score": 0.6931632076579834,
+          "page": 5,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 5: Tính chất chia hết của một tổng và Dấu hiệu chia hết\n1. Tính chất chia hết của một tổng\n- Nếu tất c...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q06",
+      "question": "Số 0 và số 1 có phải là số nguyên tố hay hợp số không?",
+      "split": "dev",
+      "type": "dinh_nghia",
+      "gold_page": 6,
+      "gold_evidence": "Số 0 và số 1 không phải là số nguyên tố cũng không phải là hợp số.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p6_c0",
+          "score": 0.7408342211572894,
+          "page": 6,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 6: Số nguyên tố, Hợp số. Ước chung lớn nhất và Bội chung nhỏ nhất\n1. Số nguyên tố và hợp số\n- Số nguyê...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 499,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p6_c1",
+          "score": 0.7210271194661348,
+          "page": 6,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "hông phải là hợp số.\n2. Ước chung lớn nhất (ƯCLN) và Bội chung nhỏ nhất (BCNN)\n- Ước chung lớn nhất của hai hay nhiều số là số lớn nhất trong tập hợp các ước ch...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 950
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p7_c1",
+          "score": 0.6985197695034968,
+          "page": 7,
+          "is_page_match": false,
+          "is_evidence_hit": true,
+          "is_hit": false,
+          "text_snippet": "nguyên âm.\n2. Tập hợp các số nguyên Z\nTập hợp gồm các số nguyên âm, số 0 và các số nguyên dương được gọi là tập hợp các số nguyên, ký hiệu là Z = {...,\n-3, -2, ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 436,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 886
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q07",
+      "question": "Tập hợp các số nguyên Z gồm những thành phần nào và số 0 có phải số nguyên âm không?",
+      "split": "dev",
+      "type": "metadata_filter",
+      "gold_page": 7,
+      "gold_evidence": "Tập hợp gồm các số nguyên âm, số 0 và các số nguyên dương được gọi là tập hợp các số nguyên, ký hiệu là Z. Số 0 là số nguyên nhưng không phải là số nguyên dương và cũng không phải là số nguyên âm.",
+      "filter": {
+        "section": "so_nguyen"
+      },
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p7_c1",
+          "score": 0.7886947094521337,
+          "page": 7,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "nguyên âm.\n2. Tập hợp các số nguyên Z\nTập hợp gồm các số nguyên âm, số 0 và các số nguyên dương được gọi là tập hợp các số nguyên, ký hiệu là Z = {...,\n-3, -2, ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 436,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 886
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p7_c0",
+          "score": 0.7442924227817709,
+          "page": 7,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 7: Số nguyên âm và Tập hợp các số nguyên. Trục số nguyên\n1. Số nguyên âm trong thực tế\nTrong đời sống, đ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 499,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p11_c1",
+          "score": 0.6944531207981125,
+          "page": 11,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "ột số nguyên âm.\n(+) x (-) = (-) và (-) x (+) = (-).\nQuy tắc: Muốn nhân hai số nguyên khác dấu, ta nhân hai số đối của chúng rồi đặt dấu '-' trước kết quả: (-a)...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 950
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q08",
+      "question": "Quy tắc bỏ dấu ngoặc khi đằng trước có dấu trừ được thực hiện ra sao?",
+      "split": "dev",
+      "type": "quy_tac",
+      "gold_page": 10,
+      "gold_evidence": "Khi bỏ dấu ngoặc có dấu trừ '-' đằng trước, ta phải đổi dấu của tất cả các số hạng trong ngoặc: Dấu '+' đổi thành '-' và dấu '-' đổi thành '+': -(a - b + c) = -a + b - c.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p10_c1",
+          "score": 0.7813720663468382,
+          "page": 10,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "'+' đằng trước, ta giữ nguyên dấu của tất cả các số hạng trong ngoặc: +(a - b + c) = a\n- b + c.\n- Khi bỏ dấu ngoặc có dấu trừ '-' đằng trước, ta phải đổi dấu củ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 431,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 882
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p10_c0",
+          "score": 0.7455590529850248,
+          "page": 10,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 10: Phép trừ số nguyên và Quy tắc dấu ngoặc\n1. Phép trừ hai số nguyên\nMuốn trừ số nguyên a cho số nguyên...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 499,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p21_c1",
+          "score": 0.7030529974507862,
+          "page": 21,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "(-b) = -(a + b).\n- Trừ hai số thập phân: a - b = a + (-b).\n2. Phép nhân và chia số thập phân\n- Nhân hai số thập phân: Nhân như nhân hai số tự nhiên, sau đó đếm ...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 950
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q09",
+      "question": "Số 0 có phải là ước của bất kỳ số nguyên nào không?",
+      "split": "dev",
+      "type": "ngoai_le",
+      "gold_page": 12,
+      "gold_evidence": "Số 0 là bội của mọi số nguyên khác 0, nhưng số 0 không phải là ước của bất kỳ số nguyên nào vì phép chia cho 0 không xác định.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p12_c1",
+          "score": 0.736671284243865,
+          "page": 12,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "a chia hết cho b thì -a cũng chia hết cho b: a b => (-a) b.\n- Các số 1 và -1 là ước của mọi số nguyên.\n- Số 0 là bội của mọi số nguyên khác 0, nhưng số 0 không ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 499,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 950
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p12_c0",
+          "score": 0.7085914704939698,
+          "page": 12,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 12: Quan hệ chia hết và Phép chia hết trong tập hợp số nguyên Z\n1. Khái niệm bội và ước trong Z\nCho hai ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 499,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p7_c1",
+          "score": 0.68042057070772,
+          "page": 7,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "nguyên âm.\n2. Tập hợp các số nguyên Z\nTập hợp gồm các số nguyên âm, số 0 và các số nguyên dương được gọi là tập hợp các số nguyên, ký hiệu là Z = {...,\n-3, -2, ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 436,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 886
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q10",
+      "question": "Thế nào là hai phân số bằng nhau theo điều kiện tích chéo?",
+      "split": "dev",
+      "type": "metadata_filter",
+      "gold_page": 13,
+      "gold_evidence": "Hai phân số a/b và c/d được gọi là bằng nhau nếu thỏa mãn điều kiện tích chéo: a x d = b x c.",
+      "filter": {
+        "section": "phan_so"
+      },
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p13_c1",
+          "score": 0.7870829647760906,
+          "page": 13,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "h nhân cả tử và mẫu với -1.\n2. Hai phân số bằng nhau\nHai phân số a/b và c/d được gọi là bằng nhau nếu thỏa mãn điều kiện tích chéo: a x d = b x c.\nKý hiệu: a/b ...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 429,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 879
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p13_c0",
+          "score": 0.7248825882501504,
+          "page": 13,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO\nTrang 13: Mở rộng khái niệm phân số và Định nghĩa hai phân số bằng nhau\n1. Khái niệm phân số tổng quát\nNgười ta ...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p17_c1",
+          "score": 0.6950358279287981,
+          "page": 17,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "nghịch đảo và Phép chia phân số\n- Hai số được gọi là nghịch đảo của nhau nếu tích của chúng bằng 1. Số nghịch đảo của phân số a/b (với a, b ≠ 0) là\nphân số b/a....",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 422,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 873
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q11",
+      "question": "Để rút gọn một phân số về phân số tối giản chỉ trong một lần ta làm thế nào?",
+      "split": "dev",
+      "type": "phuong_phap",
+      "gold_page": 14,
+      "gold_evidence": "Muốn rút gọn một phân số về phân số tối giản chỉ trong một lần, ta chia cả tử và mẫu của phân số đó cho ước chung lớn nhất (ƯCLN) của chúng.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p14_c1",
+          "score": 0.7502609069921881,
+          "page": 14,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "a/b = (a : n) / (b : n) (với n ƯC(a, b)).\n2. Rút gọn phân số về phân số tối giản\n- Rút gọn phân số là chia cả tử và mẫu của phân số cho một ước chung khác 1 và ...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 484,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 935
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p14_c0",
+          "score": 0.7068456830059413,
+          "page": 14,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO\nTrang 14: Tính chất cơ bản của phân số và Rút gọn phân số\n1. Tính chất cơ bản của phân số\n- Tính chất nhân: Nếu ...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 499,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p6_c1",
+          "score": 0.6841045498896619,
+          "page": 6,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "hông phải là hợp số.\n2. Ước chung lớn nhất (ƯCLN) và Bội chung nhỏ nhất (BCNN)\n- Ước chung lớn nhất của hai hay nhiều số là số lớn nhất trong tập hợp các ước ch...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 950
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q12",
+      "question": "Muốn tìm m/n của một số b cho trước ta thực hiện phép tính gì?",
+      "split": "dev",
+      "type": "bai_toan",
+      "gold_page": 18,
+      "gold_evidence": "Muốn tìm m/n của một số b cho trước (với m/n ∈ Q, n ≠ 0), ta lấy số b nhân với m/n: Giá trị cần tìm = b x (m/n).",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p18_c0",
+          "score": 0.7648376032405342,
+          "page": 18,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO\nTrang 18: Hai bài toán cơ bản về phân số\n1. Bài toán 1: Tìm giá trị phân số của một số cho trước\nQuy tắc: Muốn t...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p18_c1",
+          "score": 0.7505424904233668,
+          "page": 18,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "ân số của nó\nQuy tắc: Muốn tìm một số biết m/n của nó bằng a, ta lấy a chia cho m/n (với m, n ≠ 0):\nSố cần tìm = a : (m/n).\nVí dụ: Tìm chiều dài một khúc vải bi...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 306,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 756
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p17_c1",
+          "score": 0.7029524611455814,
+          "page": 17,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "nghịch đảo và Phép chia phân số\n- Hai số được gọi là nghịch đảo của nhau nếu tích của chúng bằng 1. Số nghịch đảo của phân số a/b (với a, b ≠ 0) là\nphân số b/a....",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 422,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 873
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q13",
+      "question": "Khi làm tròn số thập phân, nếu chữ số đầu tiên bỏ đi lớn hơn hoặc bằng 5 thì xử lý thế nào?",
+      "split": "dev",
+      "type": "quy_tac",
+      "gold_page": 22,
+      "gold_evidence": "Nếu chữ số đầu tiên bỏ đi lớn hơn hoặc bằng 5 (là 5, 6, 7, 8, 9), ta cộng thêm 1 vào chữ số ở hàng làm tròn.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p22_c0",
+          "score": 0.774192373732947,
+          "page": 22,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_THAP_PHAN\nTrang 22: Làm tròn số thập phân và Ước lượng kết quả\n1. Quy tắc làm tròn số thập phân\nMuốn làm tròn một số ...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 499,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p22_c1",
+          "score": 0.7647729689980178,
+          "page": 22,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "ta cộng thêm 1 vào chữ số ở hàng\nlàm tròn.\n- Đối với phần thập phân sau hàng làm tròn: Ta bỏ hẳn đi.\n- Đối với phần nguyên sau hàng làm tròn: Ta thay các chữ số...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 499,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 950
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p20_c1",
+          "score": 0.6854107981379407,
+          "page": 20,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "hơn thì số đó lớn hơn.\nVí dụ: 15,38 > 15,35 vì phần nguyên bằng 15, hàng phần mười đều là 3, nhưng hàng phần trăm 8 > 5.\n2. So sánh tổng quát số thập phân\n- Mọi...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 464,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 914
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q14",
+      "question": "Công thức tính tỉ số phần trăm của hai số a và b là gì?",
+      "split": "dev",
+      "type": "cong_thuc",
+      "gold_page": 23,
+      "gold_evidence": "Ta lấy a chia cho b, rồi nhân kết quả với 100 và viết thêm ký hiệu % vào bên phải kết quả: Tỉ số phần trăm = (a x 100 / b) %.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p23_c1",
+          "score": 0.799991880846771,
+          "page": 23,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "ính tỉ số phần trăm của hai số a và b: Ta lấy a chia cho b, rồi nhân kết quả với 100 và viết thêm ký hiệu % vào\nbên phải kết quả:\nTỉ số phần trăm = (a x 100 / b...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 377,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 827
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p23_c0",
+          "score": 0.7769078104285195,
+          "page": 23,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_THAP_PHAN\nTrang 23: Tỉ số và Tỉ số phần trăm\n1. Khái niệm tỉ số của hai số\nTỉ số của hai số a và b (với b ≠ 0) là thư...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p24_c0",
+          "score": 0.756567670593831,
+          "page": 24,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_THAP_PHAN\nTrang 24: Các bài toán thực tế về tỉ số phần trăm\n1. Bài toán tìm giá trị phần trăm của một số\nMuốn tìm a% ...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q15",
+      "question": "Phân loại hai nhóm dữ liệu thống kê chính là gì?",
+      "split": "dev",
+      "type": "dinh_nghia",
+      "gold_page": 31,
+      "gold_evidence": "Dữ liệu thống kê bao gồm hai loại chính: Dữ liệu là số (dữ liệu định lượng): Chiều cao, cân nặng, nhiệt độ, điểm thi, số học sinh. Dữ liệu không phải là số (dữ liệu định tính): Tên các món ăn ưa thích, xếp loại học lực, màu sắc, giới tính.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p31_c0",
+          "score": 0.7228954532516155,
+          "page": 31,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 31: Thu thập và tổ chức dữ liệu thống kê. Tính hợp lý của dữ liệu\n1. Thu thập và phân loại dữ li...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p31_c1",
+          "score": 0.7176333461627256,
+          "page": 31,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "độ, điểm thi, số học sinh.\n- Dữ liệu không phải là số (dữ liệu định tính): Tên các món ăn ưa thích, xếp loại học lực (Giỏi, Khá, Trung bình), màu\nsắc, giới tính...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 499,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 950
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p32_c0",
+          "score": 0.689117305176193,
+          "page": 32,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 32: Bảng số liệu thống kê ban đầu và Bảng tần số\n1. Bảng số liệu thống kê ban đầu\nKhi điều tra v...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q16",
+      "question": "Hai đường chéo của hình thoi có những đặc điểm và tính chất hình học gì?",
+      "split": "test",
+      "type": "metadata_filter",
+      "gold_page": 26,
+      "gold_evidence": "Hai đường chéo của hình thoi vuông góc với nhau tại trung điểm của mỗi đường. Hai đường chéo là hai trục đối xứng của hình thoi và là các tia phân giác của các góc trong hình thoi.",
+      "filter": {
+        "section": "hinh_hoc_truc_quan"
+      },
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p26_c1",
+          "score": 0.7793829305072597,
+          "page": 26,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "g nhau.\nĐặc điểm của hình thoi:\n- Các cạnh đối diện song song với nhau.\n- Các góc đối diện bằng nhau.\n- Hai đường chéo của hình thoi vuông góc với nhau tại trun...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 335,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 785
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p26_c0",
+          "score": 0.7401626421617897,
+          "page": 26,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: HINH_HOC_TRUC_QUAN\nTrang 26: Hình chữ nhật và Hình thoi\n1. Hình chữ nhật\nHình chữ nhật là tứ giác có 4 góc vuông (mỗi gó...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p25_c1",
+          "score": 0.7065818390558366,
+          "page": 25,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "ai đường chéo vuông góc với nhau tại trung điểm của mỗi đường.\n3. Lục giác đều\nLục giác đều là hình có 6 cạnh bằng nhau và 6 góc bằng nhau.\nHình lục giác đều đư...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 426,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 876
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q17",
+      "question": "Công thức tính diện tích hình thang có đáy lớn a, đáy nhỏ b và chiều cao h là gì?",
+      "split": "test",
+      "type": "cong_thuc",
+      "gold_page": 29,
+      "gold_evidence": "Diện tích hình thang có đáy lớn a, đáy nhỏ b và chiều cao h: S = ((a + b) x h) / 2 (bằng tổng độ dài hai đáy nhân với chiều cao rồi chia cho 2).",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p29_c1",
+          "score": 0.8015230917120619,
+          "page": 29,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "= (a x b) / 2.\n2. Chu vi và diện tích Hình thang\n- Chu vi hình thang có 4 cạnh độ dài a, b, c, d: C = a + b + c + d.\n- Diện tích hình thang có đáy lớn a, đáy nh...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 312,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 763
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p29_c0",
+          "score": 0.7462025654366401,
+          "page": 29,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: HINH_HOC_TRUC_QUAN\nTrang 29: Công thức tính Chu vi và Diện tích: Hình tam giác và Hình thang\n1. Chu vi và diện tích Hình...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 499,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p28_c1",
+          "score": 0.7314118281482979,
+          "page": 28,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "à chiều cao tương ứng h:\nChu vi: C = 2 x (a + b).\nDiện tích: S = a x h (đáy nhân với chiều cao tương ứng).\n- Hình thoi có cạnh a và độ dài hai đường chéo là d1,...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 295,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 745
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q18",
+      "question": "Hình tam giác đều và hình thang cân có tâm đối xứng không?",
+      "split": "test",
+      "type": "ngoai_le",
+      "gold_page": 30,
+      "gold_evidence": "Tam giác đều và hình thang cân không có tâm đối xứng.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p30_c1",
+          "score": 0.8082632404852208,
+          "page": 30,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "nh đối).\n- Tam giác đều có 3 trục đối xứng.\n- Hình chữ nhật có 2 trục đối xứng.\n- Hình thang cân có 1 trục đối xứng.\n2. Hình có tâm đối xứng\nĐiểm O được gọi là ...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 499,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 950
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p30_c2",
+          "score": 0.7566933974455283,
+          "page": 30,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "hình thang cân không có tâm đối xứng.\nTrang 30 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 86,
+            "chunking_strategy": "fixed_size",
+            "start_char": 900,
+            "end_char": 987
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p27_c1",
+          "score": 0.7352719316401288,
+          "page": 27,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "tổng quát không có trục đối xứng.\n2. Hình thang cân\nHình thang cân là hình thang có hai góc kề một đáy bằng nhau.\nĐặc điểm của hình thang cân:\n- Hai đáy song so...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 427,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 878
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q19",
+      "question": "Biểu đồ cột kép được sử dụng khi nào và cách phân biệt các cột giữa hai nhóm?",
+      "split": "test",
+      "type": "so_sanh",
+      "gold_page": 34,
+      "gold_evidence": "Khi muốn so sánh từng cặp đại lượng của hai nhóm đối tượng cùng loại, người ta dùng biểu đồ cột kép. Cột của mỗi nhóm được phân biệt bằng màu sắc hoặc hoa văn khác nhau. Cần có phần chú giải rõ ràng.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p34_c1",
+          "score": 0.8174200201943925,
+          "page": 34,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "ừng cặp đại lượng của hai nhóm đối tượng cùng loại (ví dụ: số học sinh nam và nữ của từng lớp,\nlượng mưa của hai năm liên tiếp), người ta dùng biểu đồ cột kép.\n...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 437,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 887
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p34_c0",
+          "score": 0.7709060279887724,
+          "page": 34,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 34: Biểu đồ cột đơn và Biểu đồ cột kép\n1. Biểu đồ cột đơn\nBiểu đồ cột sử dụng các cột hình chữ n...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p33_c0",
+          "score": 0.6419119132394446,
+          "page": 33,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 33: Biểu đồ tranh: Cách đọc và ý nghĩa biểu tượng\n1. Khái niệm biểu đồ tranh\nBiểu đồ tranh là bi...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q20",
+      "question": "Công thức tính xác suất thực nghiệm của một sự kiện E khi thực hiện n lần thí nghiệm là gì?",
+      "split": "test",
+      "type": "cong_thuc",
+      "gold_page": 36,
+      "gold_evidence": "tỉ số giữa số lần sự kiện E xuất hiện (k) và tổng số lần thực hiện phép thử (n) được gọi là xác suất thực nghiệm của sự kiện E: Xác suất thực nghiệm = k / n = (Số lần xuất hiện sự kiện E) / (Tổng số lần thực hiện thí nghiệm).",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p36_c0",
+          "score": 0.7728241115626234,
+          "page": 36,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 36: Xác suất thực nghiệm của một sự kiện\n1. Định nghĩa xác suất thực nghiệm\nKhi thực hiện một ph...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 500,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p36_c1",
+          "score": 0.7406158283667794,
+          "page": 36,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "t số nằm trong đoạn từ 0 đến 1 (hoặc từ 0% đến 100%).\n2. Ý nghĩa và tính chất\n- Khi số lần thực hiện phép thử n càng lớn, xác suất thực nghiệm của một sự kiện s...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 474,
+            "chunking_strategy": "fixed_size",
+            "start_char": 450,
+            "end_char": 924
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p35_c0",
+          "score": 0.6814188524123211,
+          "page": 35,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 35: Kết quả có thể và Sự kiện trong thí nghiệm ngẫu nhiên\n1. Phép thử nghiệm ngẫu nhiên\nPhép thử...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 499,
+            "chunking_strategy": "fixed_size",
+            "start_char": 0,
+            "end_char": 500
+          }
+        }
+      ]
+    }
+  ],
+  "B": [
+    {
+      "question_id": "q01",
+      "question": "Số tự nhiên nhỏ nhất là số nào và tập hợp các số tự nhiên N* gồm những số nào?",
+      "split": "dev",
+      "type": "truc_tiep",
+      "gold_page": 1,
+      "gold_evidence": "Tập hợp các số tự nhiên khác 0 được ký hiệu là N* = {1; 2; 3; 4; ...}. Số tự nhiên nhỏ nhất là số 0.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p1_c0",
+          "score": 0.7515065163465906,
+          "page": 1,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 1: Tập hợp và các phần tử của tập hợp. Tập hợp số tự nhiên\n1. Khái niệm tập hợp và phần tử\nTập hợp là ...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p6_c0",
+          "score": 0.6898409645750068,
+          "page": 6,
+          "is_page_match": false,
+          "is_evidence_hit": true,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 6: Số nguyên tố, Hợp số. Ước chung lớn nhất và Bội chung nhỏ nhất\n1. Số nguyên tố và hợp số\n- Số nguyê...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p1_c1",
+          "score": 0.6753362927576949,
+          "page": 1,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "liên tiếp hơn kém nhau 1 đơn vị. Mỗi số tự nhiên có một số liền sau duy nhất và (trừ số 0) có một số liền\ntrước duy nhất.\nTrang 1 / 36 - Sách GDPT 2018 (CC BY-N...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 169,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q02",
+      "question": "Trong hệ thống chữ số La Mã, những chữ số nào không bao giờ được lặp lại?",
+      "split": "dev",
+      "type": "truc_tiep",
+      "gold_page": 2,
+      "gold_evidence": "Chữ số V, L, D không bao giờ được lặp lại.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p2_c1",
+          "score": 0.7335376049289957,
+          "page": 2,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": ", D không bao giờ được lặp lại.\n- Khi chữ số có giá trị nhỏ hơn đứng trước chữ số lớn hơn, ta lấy giá trị lớn trừ giá trị nhỏ: IV là 4, IX là 9, XL là 40, XC\nlà...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 212,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p2_c0",
+          "score": 0.7183766333059618,
+          "page": 2,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 2: Cách ghi số tự nhiên. Hệ thập phân và chữ số La Mã\n1. Hệ thập phân\nĐể ghi số tự nhiên trong hệ thập...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p1_c0",
+          "score": 0.6220276364139106,
+          "page": 1,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 1: Tập hợp và các phần tử của tập hợp. Tập hợp số tự nhiên\n1. Khái niệm tập hợp và phần tử\nTập hợp là ...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q03",
+      "question": "Quy tắc nhân hai luỹ thừa cùng cơ số được phát biểu như thế nào?",
+      "split": "dev",
+      "type": "cong_thuc",
+      "gold_page": 3,
+      "gold_evidence": "Quy tắc nhân hai luỹ thừa cùng cơ số: Giữ nguyên cơ số và cộng các số mũ: a^m x a^n = a^(m + n).",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p3_c0",
+          "score": 0.7439332492043277,
+          "page": 3,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 3: Các phép tính với số tự nhiên và Luỹ thừa với số mũ tự nhiên\n1. Các phép tính cơ bản\nPhép cộng và p...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p3_c1",
+          "score": 0.6907802081992378,
+          "page": 3,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "ơ số: Giữ nguyên cơ số và trừ các số mũ: a^m : a^n = a^(m - n) (với a ≠ 0 và m ≥ n).\nTrang 3 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 132,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p11_c0",
+          "score": 0.6891335119432092,
+          "page": 11,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 11: Phép nhân hai số nguyên và Tính chất phân phối\n1. Quy tắc nhân hai số nguyên\n- Nhân hai số nguyên cù...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q04",
+      "question": "Khi biểu thức có chứa các dấu ngoặc tròn, ngoặc vuông và ngoặc nhọn thì thứ tự thực hiện như thế nào?",
+      "split": "dev",
+      "type": "thu_tu_tinh",
+      "gold_page": 4,
+      "gold_evidence": "Thực hiện trong ngoặc tròn ( ) trước -> Sau đó đến ngoặc vuông [ ] -> Cuối cùng thực hiện trong ngoặc nhọn { }.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p4_c0",
+          "score": 0.7584869917605668,
+          "page": 4,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 4: Thứ tự thực hiện các phép tính trong biểu thức\n1. Biểu thức không có dấu ngoặc\n- Nếu biểu thức chỉ ...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p10_c1",
+          "score": 0.705271933271843,
+          "page": 10,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "các số hạng đưa vào trong ngoặc.\nTrang 10 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 81,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p4_c1",
+          "score": 0.6652971597109153,
+          "page": 4,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "ồi đến cộng trừ.\nTrang 4 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 64,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q05",
+      "question": "Dấu hiệu nhận biết một số chia hết cho 9 là gì và mối liên hệ giữa chia hết cho 9 và chia hết cho 3?",
+      "split": "dev",
+      "type": "dieu_kien",
+      "gold_page": 5,
+      "gold_evidence": "Các số có tổng các chữ số chia hết cho 9 thì chia hết cho 9. Một số chia hết cho 9 thì luôn chia hết cho 3, nhưng số chia hết cho 3 chưa chắc chia hết cho 9.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p5_c1",
+          "score": 0.7800893702295915,
+          "page": 5,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "hết cho 3 thì chia hết cho 3.\n- Dấu hiệu chia hết cho 9: Các số có tổng các chữ số chia hết cho 9 thì chia hết cho 9. Một số chia hết cho 9 thì luôn\nchia hết ch...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 262,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p5_c0",
+          "score": 0.6989370820015592,
+          "page": 5,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 5: Tính chất chia hết của một tổng và Dấu hiệu chia hết\n1. Tính chất chia hết của một tổng\n- Nếu tất c...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p12_c0",
+          "score": 0.6655264353260177,
+          "page": 12,
+          "is_page_match": false,
+          "is_evidence_hit": true,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 12: Quan hệ chia hết và Phép chia hết trong tập hợp số nguyên Z\n1. Khái niệm bội và ước trong Z\nCho hai ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q06",
+      "question": "Số 0 và số 1 có phải là số nguyên tố hay hợp số không?",
+      "split": "dev",
+      "type": "dinh_nghia",
+      "gold_page": 6,
+      "gold_evidence": "Số 0 và số 1 không phải là số nguyên tố cũng không phải là hợp số.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p6_c0",
+          "score": 0.7348240104340099,
+          "page": 6,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 6: Số nguyên tố, Hợp số. Ước chung lớn nhất và Bội chung nhỏ nhất\n1. Số nguyên tố và hợp số\n- Số nguyê...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p1_c0",
+          "score": 0.6861936876737408,
+          "page": 1,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 1: Tập hợp và các phần tử của tập hợp. Tập hợp số tự nhiên\n1. Khái niệm tập hợp và phần tử\nTập hợp là ...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p12_c0",
+          "score": 0.6771935287047625,
+          "page": 12,
+          "is_page_match": false,
+          "is_evidence_hit": true,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 12: Quan hệ chia hết và Phép chia hết trong tập hợp số nguyên Z\n1. Khái niệm bội và ước trong Z\nCho hai ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q07",
+      "question": "Tập hợp các số nguyên Z gồm những thành phần nào và số 0 có phải số nguyên âm không?",
+      "split": "dev",
+      "type": "metadata_filter",
+      "gold_page": 7,
+      "gold_evidence": "Tập hợp gồm các số nguyên âm, số 0 và các số nguyên dương được gọi là tập hợp các số nguyên, ký hiệu là Z. Số 0 là số nguyên nhưng không phải là số nguyên dương và cũng không phải là số nguyên âm.",
+      "filter": {
+        "section": "so_nguyen"
+      },
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p7_c0",
+          "score": 0.7732379890973677,
+          "page": 7,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 7: Số nguyên âm và Tập hợp các số nguyên. Trục số nguyên\n1. Số nguyên âm trong thực tế\nTrong đời sống, đ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p12_c0",
+          "score": 0.7027362629044825,
+          "page": 12,
+          "is_page_match": false,
+          "is_evidence_hit": true,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 12: Quan hệ chia hết và Phép chia hết trong tập hợp số nguyên Z\n1. Khái niệm bội và ước trong Z\nCho hai ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p1_c0",
+          "score": 0.6857020682942456,
+          "page": 1,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 1: Tập hợp và các phần tử của tập hợp. Tập hợp số tự nhiên\n1. Khái niệm tập hợp và phần tử\nTập hợp là ...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q08",
+      "question": "Quy tắc bỏ dấu ngoặc khi đằng trước có dấu trừ được thực hiện ra sao?",
+      "split": "dev",
+      "type": "quy_tac",
+      "gold_page": 10,
+      "gold_evidence": "Khi bỏ dấu ngoặc có dấu trừ '-' đằng trước, ta phải đổi dấu của tất cả các số hạng trong ngoặc: Dấu '+' đổi thành '-' và dấu '-' đổi thành '+': -(a - b + c) = -a + b - c.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p10_c0",
+          "score": 0.7555800559185577,
+          "page": 10,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 10: Phép trừ số nguyên và Quy tắc dấu ngoặc\n1. Phép trừ hai số nguyên\nMuốn trừ số nguyên a cho số nguyên...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p10_c1",
+          "score": 0.7068721849830788,
+          "page": 10,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "các số hạng đưa vào trong ngoặc.\nTrang 10 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 81,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p21_c1",
+          "score": 0.6930488057707688,
+          "page": 21,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "ương: (-) x (-) = (+); (-) : (-) = (+).\nKhác dấu cho kết quả âm: (-) x (+) = (-); (-) : (+) = (-).\n- Nhân với 10, 100, 1000...: Dịch dấu phẩy sang phải 1, 2, 3....",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 291,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q09",
+      "question": "Số 0 có phải là ước của bất kỳ số nguyên nào không?",
+      "split": "dev",
+      "type": "ngoai_le",
+      "gold_page": 12,
+      "gold_evidence": "Số 0 là bội của mọi số nguyên khác 0, nhưng số 0 không phải là ước của bất kỳ số nguyên nào vì phép chia cho 0 không xác định.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p12_c0",
+          "score": 0.7358651602995739,
+          "page": 12,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 12: Quan hệ chia hết và Phép chia hết trong tập hợp số nguyên Z\n1. Khái niệm bội và ước trong Z\nCho hai ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p7_c0",
+          "score": 0.6724298465068108,
+          "page": 7,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 7: Số nguyên âm và Tập hợp các số nguyên. Trục số nguyên\n1. Số nguyên âm trong thực tế\nTrong đời sống, đ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p6_c0",
+          "score": 0.6721392780115785,
+          "page": 6,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 6: Số nguyên tố, Hợp số. Ước chung lớn nhất và Bội chung nhỏ nhất\n1. Số nguyên tố và hợp số\n- Số nguyê...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q10",
+      "question": "Thế nào là hai phân số bằng nhau theo điều kiện tích chéo?",
+      "split": "dev",
+      "type": "metadata_filter",
+      "gold_page": 13,
+      "gold_evidence": "Hai phân số a/b và c/d được gọi là bằng nhau nếu thỏa mãn điều kiện tích chéo: a x d = b x c.",
+      "filter": {
+        "section": "phan_so"
+      },
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p13_c0",
+          "score": 0.7685779870881049,
+          "page": 13,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO\nTrang 13: Mở rộng khái niệm phân số và Định nghĩa hai phân số bằng nhau\n1. Khái niệm phân số tổng quát\nNgười ta ...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p13_c1",
+          "score": 0.6914509655910037,
+          "page": 13,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "x/b = c/d thì x = (b x c) / d.\nTrang 13 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 79,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p14_c0",
+          "score": 0.688570833444242,
+          "page": 14,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO\nTrang 14: Tính chất cơ bản của phân số và Rút gọn phân số\n1. Tính chất cơ bản của phân số\n- Tính chất nhân: Nếu ...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q11",
+      "question": "Để rút gọn một phân số về phân số tối giản chỉ trong một lần ta làm thế nào?",
+      "split": "dev",
+      "type": "phuong_phap",
+      "gold_page": 14,
+      "gold_evidence": "Muốn rút gọn một phân số về phân số tối giản chỉ trong một lần, ta chia cả tử và mẫu của phân số đó cho ước chung lớn nhất (ƯCLN) của chúng.",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p14_c1",
+          "score": 0.7569816970215834,
+          "page": 14,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "một lần, ta chia cả tử và mẫu của phân số đó cho ước chung\nlớn nhất (ƯCLN) của chúng.\nTrang 14 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 134,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p14_c0",
+          "score": 0.73280281501432,
+          "page": 14,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO\nTrang 14: Tính chất cơ bản của phân số và Rút gọn phân số\n1. Tính chất cơ bản của phân số\n- Tính chất nhân: Nếu ...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p15_c0",
+          "score": 0.6738385867379145,
+          "page": 15,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO\nTrang 15: Quy đồng mẫu nhiều phân số và So sánh phân số\n1. Quy tắc quy đồng mẫu số nhiều phân số\nĐể quy đồng mẫu...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q12",
+      "question": "Muốn tìm m/n của một số b cho trước ta thực hiện phép tính gì?",
+      "split": "dev",
+      "type": "bai_toan",
+      "gold_page": 18,
+      "gold_evidence": "Muốn tìm m/n của một số b cho trước (với m/n ∈ Q, n ≠ 0), ta lấy số b nhân với m/n: Giá trị cần tìm = b x (m/n).",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p18_c0",
+          "score": 0.7592728839814087,
+          "page": 18,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO\nTrang 18: Hai bài toán cơ bản về phân số\n1. Bài toán 1: Tìm giá trị phân số của một số cho trước\nQuy tắc: Muốn t...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 756,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p24_c0",
+          "score": 0.7105790788775417,
+          "page": 24,
+          "is_page_match": false,
+          "is_evidence_hit": true,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_THAP_PHAN\nTrang 24: Các bài toán thực tế về tỉ số phần trăm\n1. Bài toán tìm giá trị phần trăm của một số\nMuốn tìm a% ...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p17_c0",
+          "score": 0.7054506059656425,
+          "page": 17,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO\nTrang 17: Phép nhân, phép chia phân số và Số nghịch đảo\n1. Phép nhân phân số\nMuốn nhân hai phân số, ta nhân các ...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q13",
+      "question": "Khi làm tròn số thập phân, nếu chữ số đầu tiên bỏ đi lớn hơn hoặc bằng 5 thì xử lý thế nào?",
+      "split": "dev",
+      "type": "quy_tac",
+      "gold_page": 22,
+      "gold_evidence": "Nếu chữ số đầu tiên bỏ đi lớn hơn hoặc bằng 5 (là 5, 6, 7, 8, 9), ta cộng thêm 1 vào chữ số ở hàng làm tròn.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p22_c0",
+          "score": 0.7738655092949707,
+          "page": 22,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_THAP_PHAN\nTrang 22: Làm tròn số thập phân và Ước lượng kết quả\n1. Quy tắc làm tròn số thập phân\nMuốn làm tròn một số ...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p22_c1",
+          "score": 0.696100866865524,
+          "page": 22,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "p tính phức tạp trong thực tế, người ta thường làm tròn các số hạng hoặc\nthừa số đến hàng cao nhất rồi mới thực hiện phép tính nhẩm.\nTrang 22 / 36 - Sách GDPT 2...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 181,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p20_c0",
+          "score": 0.6766171109436829,
+          "page": 20,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_THAP_PHAN\nTrang 20: So sánh các số thập phân\n1. Quy tắc so sánh hai số thập phân dương\nĐể so sánh hai số thập phân dư...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q14",
+      "question": "Công thức tính tỉ số phần trăm của hai số a và b là gì?",
+      "split": "dev",
+      "type": "cong_thuc",
+      "gold_page": 23,
+      "gold_evidence": "Ta lấy a chia cho b, rồi nhân kết quả với 100 và viết thêm ký hiệu % vào bên phải kết quả: Tỉ số phần trăm = (a x 100 / b) %.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p23_c0",
+          "score": 0.7846419764506783,
+          "page": 23,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_THAP_PHAN\nTrang 23: Tỉ số và Tỉ số phần trăm\n1. Khái niệm tỉ số của hai số\nTỉ số của hai số a và b (với b ≠ 0) là thư...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p24_c0",
+          "score": 0.763369122284447,
+          "page": 24,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_THAP_PHAN\nTrang 24: Các bài toán thực tế về tỉ số phần trăm\n1. Bài toán tìm giá trị phần trăm của một số\nMuốn tìm a% ...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p13_c1",
+          "score": 0.6732237016773537,
+          "page": 13,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "x/b = c/d thì x = (b x c) / d.\nTrang 13 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 79,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q15",
+      "question": "Phân loại hai nhóm dữ liệu thống kê chính là gì?",
+      "split": "dev",
+      "type": "dinh_nghia",
+      "gold_page": 31,
+      "gold_evidence": "Dữ liệu thống kê bao gồm hai loại chính: Dữ liệu là số (dữ liệu định lượng): Chiều cao, cân nặng, nhiệt độ, điểm thi, số học sinh. Dữ liệu không phải là số (dữ liệu định tính): Tên các món ăn ưa thích, xếp loại học lực, màu sắc, giới tính.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p31_c0",
+          "score": 0.7317505829363367,
+          "page": 31,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 31: Thu thập và tổ chức dữ liệu thống kê. Tính hợp lý của dữ liệu\n1. Thu thập và phân loại dữ li...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p32_c0",
+          "score": 0.6899913877288539,
+          "page": 32,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 32: Bảng số liệu thống kê ban đầu và Bảng tần số\n1. Bảng số liệu thống kê ban đầu\nKhi điều tra v...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p34_c0",
+          "score": 0.6664476099587291,
+          "page": 34,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 34: Biểu đồ cột đơn và Biểu đồ cột kép\n1. Biểu đồ cột đơn\nBiểu đồ cột sử dụng các cột hình chữ n...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q16",
+      "question": "Hai đường chéo của hình thoi có những đặc điểm và tính chất hình học gì?",
+      "split": "test",
+      "type": "metadata_filter",
+      "gold_page": 26,
+      "gold_evidence": "Hai đường chéo của hình thoi vuông góc với nhau tại trung điểm của mỗi đường. Hai đường chéo là hai trục đối xứng của hình thoi và là các tia phân giác của các góc trong hình thoi.",
+      "filter": {
+        "section": "hinh_hoc_truc_quan"
+      },
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p26_c0",
+          "score": 0.747159984019223,
+          "page": 26,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: HINH_HOC_TRUC_QUAN\nTrang 26: Hình chữ nhật và Hình thoi\n1. Hình chữ nhật\nHình chữ nhật là tứ giác có 4 góc vuông (mỗi gó...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 785,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p30_c1",
+          "score": 0.7037522462560342,
+          "page": 30,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "h chữ nhật, hình vuông, hình thoi có tâm đối xứng là giao điểm của hai đường chéo.\n- Tam giác đều và hình thang cân không có tâm đối xứng.\nTrang 30 / 36 - Sách ...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 187,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p27_c0",
+          "score": 0.6956607338183223,
+          "page": 27,
+          "is_page_match": false,
+          "is_evidence_hit": true,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: HINH_HOC_TRUC_QUAN\nTrang 27: Hình bình hành và Hình thang cân\n1. Hình bình hành\nHình bình hành là tứ giác có các cặp cạn...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q17",
+      "question": "Công thức tính diện tích hình thang có đáy lớn a, đáy nhỏ b và chiều cao h là gì?",
+      "split": "test",
+      "type": "cong_thuc",
+      "gold_page": 29,
+      "gold_evidence": "Diện tích hình thang có đáy lớn a, đáy nhỏ b và chiều cao h: S = ((a + b) x h) / 2 (bằng tổng độ dài hai đáy nhân với chiều cao rồi chia cho 2).",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p29_c0",
+          "score": 0.7601211834798582,
+          "page": 29,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: HINH_HOC_TRUC_QUAN\nTrang 29: Công thức tính Chu vi và Diện tích: Hình tam giác và Hình thang\n1. Chu vi và diện tích Hình...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 763,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p28_c0",
+          "score": 0.696918098157856,
+          "page": 28,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: HINH_HOC_TRUC_QUAN\nTrang 28: Công thức tính Chu vi và Diện tích: Hình vuông, Chữ nhật, Bình hành, Thoi\n1. Chu vi và diện...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 745,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p27_c1",
+          "score": 0.6656228649002578,
+          "page": 27,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "ng đi qua trung điểm hai đáy.\nTrang 27 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 78,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q18",
+      "question": "Hình tam giác đều và hình thang cân có tâm đối xứng không?",
+      "split": "test",
+      "type": "ngoai_le",
+      "gold_page": 30,
+      "gold_evidence": "Tam giác đều và hình thang cân không có tâm đối xứng.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p30_c1",
+          "score": 0.7889735888642401,
+          "page": 30,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "h chữ nhật, hình vuông, hình thoi có tâm đối xứng là giao điểm của hai đường chéo.\n- Tam giác đều và hình thang cân không có tâm đối xứng.\nTrang 30 / 36 - Sách ...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 187,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p30_c0",
+          "score": 0.7643027620088739,
+          "page": 30,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: HINH_HOC_TRUC_QUAN\nTrang 30: Hình có trục đối xứng và Hình có tâm đối xứng\n1. Hình có trục đối xứng\nĐường thẳng d được g...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p27_c0",
+          "score": 0.7201375569753583,
+          "page": 27,
+          "is_page_match": false,
+          "is_evidence_hit": true,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: HINH_HOC_TRUC_QUAN\nTrang 27: Hình bình hành và Hình thang cân\n1. Hình bình hành\nHình bình hành là tứ giác có các cặp cạn...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q19",
+      "question": "Biểu đồ cột kép được sử dụng khi nào và cách phân biệt các cột giữa hai nhóm?",
+      "split": "test",
+      "type": "so_sanh",
+      "gold_page": 34,
+      "gold_evidence": "Khi muốn so sánh từng cặp đại lượng của hai nhóm đối tượng cùng loại, người ta dùng biểu đồ cột kép. Cột của mỗi nhóm được phân biệt bằng màu sắc hoặc hoa văn khác nhau. Cần có phần chú giải rõ ràng.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p34_c0",
+          "score": 0.7785303421164086,
+          "page": 34,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 34: Biểu đồ cột đơn và Biểu đồ cột kép\n1. Biểu đồ cột đơn\nBiểu đồ cột sử dụng các cột hình chữ n...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p33_c0",
+          "score": 0.6424888593998188,
+          "page": 33,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 33: Biểu đồ tranh: Cách đọc và ý nghĩa biểu tượng\n1. Khái niệm biểu đồ tranh\nBiểu đồ tranh là bi...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p34_c1",
+          "score": 0.6338784473394735,
+          "page": 34,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "u nào đại diện cho nhóm đối tượng nào.\nTrang 34 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 87,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q20",
+      "question": "Công thức tính xác suất thực nghiệm của một sự kiện E khi thực hiện n lần thí nghiệm là gì?",
+      "split": "test",
+      "type": "cong_thuc",
+      "gold_page": 36,
+      "gold_evidence": "tỉ số giữa số lần sự kiện E xuất hiện (k) và tổng số lần thực hiện phép thử (n) được gọi là xác suất thực nghiệm của sự kiện E: Xác suất thực nghiệm = k / n = (Số lần xuất hiện sự kiện E) / (Tổng số lần thực hiện thí nghiệm).",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p36_c0",
+          "score": 0.7735003468983142,
+          "page": 36,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 36: Xác suất thực nghiệm của một sự kiện\n1. Định nghĩa xác suất thực nghiệm\nKhi thực hiện một ph...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p35_c0",
+          "score": 0.6896335877442228,
+          "page": 35,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 35: Kết quả có thể và Sự kiện trong thí nghiệm ngẫu nhiên\n1. Phép thử nghiệm ngẫu nhiên\nPhép thử...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p36_c1",
+          "score": 0.6798120291118661,
+          "page": 36,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "ặt 6 chấm' trong 50 lần gieo của Nam là: 12 / 50 = 6 / 25 = 0,24 (tức\n24%).\nTrang 36 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 124,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    }
+  ],
+  "C": [
+    {
+      "question_id": "q01",
+      "question": "Số tự nhiên nhỏ nhất là số nào và tập hợp các số tự nhiên N* gồm những số nào?",
+      "split": "dev",
+      "type": "truc_tiep",
+      "gold_page": 1,
+      "gold_evidence": "Tập hợp các số tự nhiên khác 0 được ký hiệu là N* = {1; 2; 3; 4; ...}. Số tự nhiên nhỏ nhất là số 0.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p1_c0",
+          "score": 0.7515065163465906,
+          "page": 1,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 1: Tập hợp và các phần tử của tập hợp. Tập hợp số tự nhiên\n1. Khái niệm tập hợp và phần tử\nTập hợp là ...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p6_c0",
+          "score": 0.6898409645750068,
+          "page": 6,
+          "is_page_match": false,
+          "is_evidence_hit": true,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 6: Số nguyên tố, Hợp số. Ước chung lớn nhất và Bội chung nhỏ nhất\n1. Số nguyên tố và hợp số\n- Số nguyê...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p1_c1",
+          "score": 0.6753362927576949,
+          "page": 1,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "liên tiếp hơn kém nhau 1 đơn vị. Mỗi số tự nhiên có một số liền sau duy nhất và (trừ số 0) có một số liền\ntrước duy nhất.\nTrang 1 / 36 - Sách GDPT 2018 (CC BY-N...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 169,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q02",
+      "question": "Trong hệ thống chữ số La Mã, những chữ số nào không bao giờ được lặp lại?",
+      "split": "dev",
+      "type": "truc_tiep",
+      "gold_page": 2,
+      "gold_evidence": "Chữ số V, L, D không bao giờ được lặp lại.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p2_c1",
+          "score": 0.7335376049289957,
+          "page": 2,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": ", D không bao giờ được lặp lại.\n- Khi chữ số có giá trị nhỏ hơn đứng trước chữ số lớn hơn, ta lấy giá trị lớn trừ giá trị nhỏ: IV là 4, IX là 9, XL là 40, XC\nlà...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 212,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p2_c0",
+          "score": 0.7183766333059618,
+          "page": 2,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 2: Cách ghi số tự nhiên. Hệ thập phân và chữ số La Mã\n1. Hệ thập phân\nĐể ghi số tự nhiên trong hệ thập...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p1_c0",
+          "score": 0.6220276364139106,
+          "page": 1,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 1: Tập hợp và các phần tử của tập hợp. Tập hợp số tự nhiên\n1. Khái niệm tập hợp và phần tử\nTập hợp là ...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q03",
+      "question": "Quy tắc nhân hai luỹ thừa cùng cơ số được phát biểu như thế nào?",
+      "split": "dev",
+      "type": "cong_thuc",
+      "gold_page": 3,
+      "gold_evidence": "Quy tắc nhân hai luỹ thừa cùng cơ số: Giữ nguyên cơ số và cộng các số mũ: a^m x a^n = a^(m + n).",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p3_c0",
+          "score": 0.7439332492043277,
+          "page": 3,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 3: Các phép tính với số tự nhiên và Luỹ thừa với số mũ tự nhiên\n1. Các phép tính cơ bản\nPhép cộng và p...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p3_c1",
+          "score": 0.6907802081992378,
+          "page": 3,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "ơ số: Giữ nguyên cơ số và trừ các số mũ: a^m : a^n = a^(m - n) (với a ≠ 0 và m ≥ n).\nTrang 3 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 132,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p11_c0",
+          "score": 0.6891335119432092,
+          "page": 11,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 11: Phép nhân hai số nguyên và Tính chất phân phối\n1. Quy tắc nhân hai số nguyên\n- Nhân hai số nguyên cù...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q04",
+      "question": "Khi biểu thức có chứa các dấu ngoặc tròn, ngoặc vuông và ngoặc nhọn thì thứ tự thực hiện như thế nào?",
+      "split": "dev",
+      "type": "thu_tu_tinh",
+      "gold_page": 4,
+      "gold_evidence": "Thực hiện trong ngoặc tròn ( ) trước -> Sau đó đến ngoặc vuông [ ] -> Cuối cùng thực hiện trong ngoặc nhọn { }.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p4_c0",
+          "score": 0.7584869917605668,
+          "page": 4,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 4: Thứ tự thực hiện các phép tính trong biểu thức\n1. Biểu thức không có dấu ngoặc\n- Nếu biểu thức chỉ ...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p10_c1",
+          "score": 0.705271933271843,
+          "page": 10,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "các số hạng đưa vào trong ngoặc.\nTrang 10 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 81,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p4_c1",
+          "score": 0.6652971597109153,
+          "page": 4,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "ồi đến cộng trừ.\nTrang 4 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 64,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q05",
+      "question": "Dấu hiệu nhận biết một số chia hết cho 9 là gì và mối liên hệ giữa chia hết cho 9 và chia hết cho 3?",
+      "split": "dev",
+      "type": "dieu_kien",
+      "gold_page": 5,
+      "gold_evidence": "Các số có tổng các chữ số chia hết cho 9 thì chia hết cho 9. Một số chia hết cho 9 thì luôn chia hết cho 3, nhưng số chia hết cho 3 chưa chắc chia hết cho 9.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p5_c1",
+          "score": 0.7800893702295915,
+          "page": 5,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "hết cho 3 thì chia hết cho 3.\n- Dấu hiệu chia hết cho 9: Các số có tổng các chữ số chia hết cho 9 thì chia hết cho 9. Một số chia hết cho 9 thì luôn\nchia hết ch...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 262,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p5_c0",
+          "score": 0.6989370820015592,
+          "page": 5,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 5: Tính chất chia hết của một tổng và Dấu hiệu chia hết\n1. Tính chất chia hết của một tổng\n- Nếu tất c...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p12_c0",
+          "score": 0.6655264353260177,
+          "page": 12,
+          "is_page_match": false,
+          "is_evidence_hit": true,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 12: Quan hệ chia hết và Phép chia hết trong tập hợp số nguyên Z\n1. Khái niệm bội và ước trong Z\nCho hai ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q06",
+      "question": "Số 0 và số 1 có phải là số nguyên tố hay hợp số không?",
+      "split": "dev",
+      "type": "dinh_nghia",
+      "gold_page": 6,
+      "gold_evidence": "Số 0 và số 1 không phải là số nguyên tố cũng không phải là hợp số.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p6_c0",
+          "score": 0.7348240104340099,
+          "page": 6,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 6: Số nguyên tố, Hợp số. Ước chung lớn nhất và Bội chung nhỏ nhất\n1. Số nguyên tố và hợp số\n- Số nguyê...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p1_c0",
+          "score": 0.6861936876737408,
+          "page": 1,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 1: Tập hợp và các phần tử của tập hợp. Tập hợp số tự nhiên\n1. Khái niệm tập hợp và phần tử\nTập hợp là ...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p12_c0",
+          "score": 0.6771935287047625,
+          "page": 12,
+          "is_page_match": false,
+          "is_evidence_hit": true,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 12: Quan hệ chia hết và Phép chia hết trong tập hợp số nguyên Z\n1. Khái niệm bội và ước trong Z\nCho hai ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q07",
+      "question": "Tập hợp các số nguyên Z gồm những thành phần nào và số 0 có phải số nguyên âm không?",
+      "split": "dev",
+      "type": "metadata_filter",
+      "gold_page": 7,
+      "gold_evidence": "Tập hợp gồm các số nguyên âm, số 0 và các số nguyên dương được gọi là tập hợp các số nguyên, ký hiệu là Z. Số 0 là số nguyên nhưng không phải là số nguyên dương và cũng không phải là số nguyên âm.",
+      "filter": {
+        "section": "so_nguyen"
+      },
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p7_c0",
+          "score": 0.7732379890973677,
+          "page": 7,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 7: Số nguyên âm và Tập hợp các số nguyên. Trục số nguyên\n1. Số nguyên âm trong thực tế\nTrong đời sống, đ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p12_c0",
+          "score": 0.7027362629044825,
+          "page": 12,
+          "is_page_match": false,
+          "is_evidence_hit": true,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 12: Quan hệ chia hết và Phép chia hết trong tập hợp số nguyên Z\n1. Khái niệm bội và ước trong Z\nCho hai ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p11_c0",
+          "score": 0.6729068556053925,
+          "page": 11,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 11: Phép nhân hai số nguyên và Tính chất phân phối\n1. Quy tắc nhân hai số nguyên\n- Nhân hai số nguyên cù...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q08",
+      "question": "Quy tắc bỏ dấu ngoặc khi đằng trước có dấu trừ được thực hiện ra sao?",
+      "split": "dev",
+      "type": "quy_tac",
+      "gold_page": 10,
+      "gold_evidence": "Khi bỏ dấu ngoặc có dấu trừ '-' đằng trước, ta phải đổi dấu của tất cả các số hạng trong ngoặc: Dấu '+' đổi thành '-' và dấu '-' đổi thành '+': -(a - b + c) = -a + b - c.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p10_c0",
+          "score": 0.7555800559185577,
+          "page": 10,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 10: Phép trừ số nguyên và Quy tắc dấu ngoặc\n1. Phép trừ hai số nguyên\nMuốn trừ số nguyên a cho số nguyên...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p10_c1",
+          "score": 0.7068721849830788,
+          "page": 10,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "các số hạng đưa vào trong ngoặc.\nTrang 10 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 81,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p21_c1",
+          "score": 0.6930488057707688,
+          "page": 21,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "ương: (-) x (-) = (+); (-) : (-) = (+).\nKhác dấu cho kết quả âm: (-) x (+) = (-); (-) : (+) = (-).\n- Nhân với 10, 100, 1000...: Dịch dấu phẩy sang phải 1, 2, 3....",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 291,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q09",
+      "question": "Số 0 có phải là ước của bất kỳ số nguyên nào không?",
+      "split": "dev",
+      "type": "ngoai_le",
+      "gold_page": 12,
+      "gold_evidence": "Số 0 là bội của mọi số nguyên khác 0, nhưng số 0 không phải là ước của bất kỳ số nguyên nào vì phép chia cho 0 không xác định.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p12_c0",
+          "score": 0.7358651602995739,
+          "page": 12,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 12: Quan hệ chia hết và Phép chia hết trong tập hợp số nguyên Z\n1. Khái niệm bội và ước trong Z\nCho hai ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p7_c0",
+          "score": 0.6724298465068108,
+          "page": 7,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_NGUYEN\nTrang 7: Số nguyên âm và Tập hợp các số nguyên. Trục số nguyên\n1. Số nguyên âm trong thực tế\nTrong đời sống, đ...",
+          "metadata": {
+            "section": "so_nguyen",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p6_c0",
+          "score": 0.6721392780115785,
+          "page": 6,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_TU_NHIEN\nTrang 6: Số nguyên tố, Hợp số. Ước chung lớn nhất và Bội chung nhỏ nhất\n1. Số nguyên tố và hợp số\n- Số nguyê...",
+          "metadata": {
+            "section": "so_tu_nhien",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q10",
+      "question": "Thế nào là hai phân số bằng nhau theo điều kiện tích chéo?",
+      "split": "dev",
+      "type": "metadata_filter",
+      "gold_page": 13,
+      "gold_evidence": "Hai phân số a/b và c/d được gọi là bằng nhau nếu thỏa mãn điều kiện tích chéo: a x d = b x c.",
+      "filter": {
+        "section": "phan_so"
+      },
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p13_c0",
+          "score": 0.7685779870881049,
+          "page": 13,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO\nTrang 13: Mở rộng khái niệm phân số và Định nghĩa hai phân số bằng nhau\n1. Khái niệm phân số tổng quát\nNgười ta ...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p13_c1",
+          "score": 0.6914509655910037,
+          "page": 13,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "x/b = c/d thì x = (b x c) / d.\nTrang 13 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 79,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p14_c0",
+          "score": 0.688570833444242,
+          "page": 14,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO\nTrang 14: Tính chất cơ bản của phân số và Rút gọn phân số\n1. Tính chất cơ bản của phân số\n- Tính chất nhân: Nếu ...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q11",
+      "question": "Để rút gọn một phân số về phân số tối giản chỉ trong một lần ta làm thế nào?",
+      "split": "dev",
+      "type": "phuong_phap",
+      "gold_page": 14,
+      "gold_evidence": "Muốn rút gọn một phân số về phân số tối giản chỉ trong một lần, ta chia cả tử và mẫu của phân số đó cho ước chung lớn nhất (ƯCLN) của chúng.",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p14_c1",
+          "score": 0.7569816970215834,
+          "page": 14,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "một lần, ta chia cả tử và mẫu của phân số đó cho ước chung\nlớn nhất (ƯCLN) của chúng.\nTrang 14 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 134,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p14_c0",
+          "score": 0.73280281501432,
+          "page": 14,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO\nTrang 14: Tính chất cơ bản của phân số và Rút gọn phân số\n1. Tính chất cơ bản của phân số\n- Tính chất nhân: Nếu ...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p15_c0",
+          "score": 0.6738385867379145,
+          "page": 15,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO\nTrang 15: Quy đồng mẫu nhiều phân số và So sánh phân số\n1. Quy tắc quy đồng mẫu số nhiều phân số\nĐể quy đồng mẫu...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q12",
+      "question": "Muốn tìm m/n của một số b cho trước ta thực hiện phép tính gì?",
+      "split": "dev",
+      "type": "bai_toan",
+      "gold_page": 18,
+      "gold_evidence": "Muốn tìm m/n của một số b cho trước (với m/n ∈ Q, n ≠ 0), ta lấy số b nhân với m/n: Giá trị cần tìm = b x (m/n).",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p18_c0",
+          "score": 0.7592728839814087,
+          "page": 18,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO\nTrang 18: Hai bài toán cơ bản về phân số\n1. Bài toán 1: Tìm giá trị phân số của một số cho trước\nQuy tắc: Muốn t...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 756,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p24_c0",
+          "score": 0.7105790788775417,
+          "page": 24,
+          "is_page_match": false,
+          "is_evidence_hit": true,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_THAP_PHAN\nTrang 24: Các bài toán thực tế về tỉ số phần trăm\n1. Bài toán tìm giá trị phần trăm của một số\nMuốn tìm a% ...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p17_c0",
+          "score": 0.7054506059656425,
+          "page": 17,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: PHAN_SO\nTrang 17: Phép nhân, phép chia phân số và Số nghịch đảo\n1. Phép nhân phân số\nMuốn nhân hai phân số, ta nhân các ...",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q13",
+      "question": "Khi làm tròn số thập phân, nếu chữ số đầu tiên bỏ đi lớn hơn hoặc bằng 5 thì xử lý thế nào?",
+      "split": "dev",
+      "type": "quy_tac",
+      "gold_page": 22,
+      "gold_evidence": "Nếu chữ số đầu tiên bỏ đi lớn hơn hoặc bằng 5 (là 5, 6, 7, 8, 9), ta cộng thêm 1 vào chữ số ở hàng làm tròn.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p22_c0",
+          "score": 0.7738655092949707,
+          "page": 22,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_THAP_PHAN\nTrang 22: Làm tròn số thập phân và Ước lượng kết quả\n1. Quy tắc làm tròn số thập phân\nMuốn làm tròn một số ...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p22_c1",
+          "score": 0.696100866865524,
+          "page": 22,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "p tính phức tạp trong thực tế, người ta thường làm tròn các số hạng hoặc\nthừa số đến hàng cao nhất rồi mới thực hiện phép tính nhẩm.\nTrang 22 / 36 - Sách GDPT 2...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 181,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p20_c0",
+          "score": 0.6766171109436829,
+          "page": 20,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_THAP_PHAN\nTrang 20: So sánh các số thập phân\n1. Quy tắc so sánh hai số thập phân dương\nĐể so sánh hai số thập phân dư...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q14",
+      "question": "Công thức tính tỉ số phần trăm của hai số a và b là gì?",
+      "split": "dev",
+      "type": "cong_thuc",
+      "gold_page": 23,
+      "gold_evidence": "Ta lấy a chia cho b, rồi nhân kết quả với 100 và viết thêm ký hiệu % vào bên phải kết quả: Tỉ số phần trăm = (a x 100 / b) %.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p23_c0",
+          "score": 0.7846419764506783,
+          "page": 23,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_THAP_PHAN\nTrang 23: Tỉ số và Tỉ số phần trăm\n1. Khái niệm tỉ số của hai số\nTỉ số của hai số a và b (với b ≠ 0) là thư...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 799,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p24_c0",
+          "score": 0.763369122284447,
+          "page": 24,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: SO_THAP_PHAN\nTrang 24: Các bài toán thực tế về tỉ số phần trăm\n1. Bài toán tìm giá trị phần trăm của một số\nMuốn tìm a% ...",
+          "metadata": {
+            "section": "so_thap_phan",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p13_c1",
+          "score": 0.6732237016773537,
+          "page": 13,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "x/b = c/d thì x = (b x c) / d.\nTrang 13 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "phan_so",
+            "char_count": 79,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q15",
+      "question": "Phân loại hai nhóm dữ liệu thống kê chính là gì?",
+      "split": "dev",
+      "type": "dinh_nghia",
+      "gold_page": 31,
+      "gold_evidence": "Dữ liệu thống kê bao gồm hai loại chính: Dữ liệu là số (dữ liệu định lượng): Chiều cao, cân nặng, nhiệt độ, điểm thi, số học sinh. Dữ liệu không phải là số (dữ liệu định tính): Tên các món ăn ưa thích, xếp loại học lực, màu sắc, giới tính.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p31_c0",
+          "score": 0.7317505829363367,
+          "page": 31,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 31: Thu thập và tổ chức dữ liệu thống kê. Tính hợp lý của dữ liệu\n1. Thu thập và phân loại dữ li...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p32_c0",
+          "score": 0.6899913877288539,
+          "page": 32,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 32: Bảng số liệu thống kê ban đầu và Bảng tần số\n1. Bảng số liệu thống kê ban đầu\nKhi điều tra v...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p34_c0",
+          "score": 0.6664476099587291,
+          "page": 34,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 34: Biểu đồ cột đơn và Biểu đồ cột kép\n1. Biểu đồ cột đơn\nBiểu đồ cột sử dụng các cột hình chữ n...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q16",
+      "question": "Hai đường chéo của hình thoi có những đặc điểm và tính chất hình học gì?",
+      "split": "test",
+      "type": "metadata_filter",
+      "gold_page": 26,
+      "gold_evidence": "Hai đường chéo của hình thoi vuông góc với nhau tại trung điểm của mỗi đường. Hai đường chéo là hai trục đối xứng của hình thoi và là các tia phân giác của các góc trong hình thoi.",
+      "filter": {
+        "section": "hinh_hoc_truc_quan"
+      },
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p26_c0",
+          "score": 0.747159984019223,
+          "page": 26,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: HINH_HOC_TRUC_QUAN\nTrang 26: Hình chữ nhật và Hình thoi\n1. Hình chữ nhật\nHình chữ nhật là tứ giác có 4 góc vuông (mỗi gó...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 785,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p30_c1",
+          "score": 0.7037522462560342,
+          "page": 30,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "h chữ nhật, hình vuông, hình thoi có tâm đối xứng là giao điểm của hai đường chéo.\n- Tam giác đều và hình thang cân không có tâm đối xứng.\nTrang 30 / 36 - Sách ...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 187,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p27_c0",
+          "score": 0.6956607338183223,
+          "page": 27,
+          "is_page_match": false,
+          "is_evidence_hit": true,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: HINH_HOC_TRUC_QUAN\nTrang 27: Hình bình hành và Hình thang cân\n1. Hình bình hành\nHình bình hành là tứ giác có các cặp cạn...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q17",
+      "question": "Công thức tính diện tích hình thang có đáy lớn a, đáy nhỏ b và chiều cao h là gì?",
+      "split": "test",
+      "type": "cong_thuc",
+      "gold_page": 29,
+      "gold_evidence": "Diện tích hình thang có đáy lớn a, đáy nhỏ b và chiều cao h: S = ((a + b) x h) / 2 (bằng tổng độ dài hai đáy nhân với chiều cao rồi chia cho 2).",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p29_c0",
+          "score": 0.7601211834798582,
+          "page": 29,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: HINH_HOC_TRUC_QUAN\nTrang 29: Công thức tính Chu vi và Diện tích: Hình tam giác và Hình thang\n1. Chu vi và diện tích Hình...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 763,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p28_c0",
+          "score": 0.696918098157856,
+          "page": 28,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: HINH_HOC_TRUC_QUAN\nTrang 28: Công thức tính Chu vi và Diện tích: Hình vuông, Chữ nhật, Bình hành, Thoi\n1. Chu vi và diện...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 745,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p27_c1",
+          "score": 0.6656228649002578,
+          "page": 27,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "ng đi qua trung điểm hai đáy.\nTrang 27 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 78,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q18",
+      "question": "Hình tam giác đều và hình thang cân có tâm đối xứng không?",
+      "split": "test",
+      "type": "ngoai_le",
+      "gold_page": 30,
+      "gold_evidence": "Tam giác đều và hình thang cân không có tâm đối xứng.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p30_c1",
+          "score": 0.7889735888642401,
+          "page": 30,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "h chữ nhật, hình vuông, hình thoi có tâm đối xứng là giao điểm của hai đường chéo.\n- Tam giác đều và hình thang cân không có tâm đối xứng.\nTrang 30 / 36 - Sách ...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 187,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p30_c0",
+          "score": 0.7643027620088739,
+          "page": 30,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: HINH_HOC_TRUC_QUAN\nTrang 30: Hình có trục đối xứng và Hình có tâm đối xứng\n1. Hình có trục đối xứng\nĐường thẳng d được g...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p27_c0",
+          "score": 0.7201375569753583,
+          "page": 27,
+          "is_page_match": false,
+          "is_evidence_hit": true,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: HINH_HOC_TRUC_QUAN\nTrang 27: Hình bình hành và Hình thang cân\n1. Hình bình hành\nHình bình hành là tứ giác có các cặp cạn...",
+          "metadata": {
+            "section": "hinh_hoc_truc_quan",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q19",
+      "question": "Biểu đồ cột kép được sử dụng khi nào và cách phân biệt các cột giữa hai nhóm?",
+      "split": "test",
+      "type": "so_sanh",
+      "gold_page": 34,
+      "gold_evidence": "Khi muốn so sánh từng cặp đại lượng của hai nhóm đối tượng cùng loại, người ta dùng biểu đồ cột kép. Cột của mỗi nhóm được phân biệt bằng màu sắc hoặc hoa văn khác nhau. Cần có phần chú giải rõ ràng.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p34_c0",
+          "score": 0.7785303421164086,
+          "page": 34,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 34: Biểu đồ cột đơn và Biểu đồ cột kép\n1. Biểu đồ cột đơn\nBiểu đồ cột sử dụng các cột hình chữ n...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p33_c0",
+          "score": 0.6424888593998188,
+          "page": 33,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 33: Biểu đồ tranh: Cách đọc và ý nghĩa biểu tượng\n1. Khái niệm biểu đồ tranh\nBiểu đồ tranh là bi...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p34_c1",
+          "score": 0.6338784473394735,
+          "page": 34,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "u nào đại diện cho nhóm đối tượng nào.\nTrang 34 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 87,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q20",
+      "question": "Công thức tính xác suất thực nghiệm của một sự kiện E khi thực hiện n lần thí nghiệm là gì?",
+      "split": "test",
+      "type": "cong_thuc",
+      "gold_page": 36,
+      "gold_evidence": "tỉ số giữa số lần sự kiện E xuất hiện (k) và tổng số lần thực hiện phép thử (n) được gọi là xác suất thực nghiệm của sự kiện E: Xác suất thực nghiệm = k / n = (Số lần xuất hiện sự kiện E) / (Tổng số lần thực hiện thí nghiệm).",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "toan-6-gdpt2018_p36_c0",
+          "score": 0.7735003468983142,
+          "page": 36,
+          "is_page_match": true,
+          "is_evidence_hit": true,
+          "is_hit": true,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 36: Xác suất thực nghiệm của một sự kiện\n1. Định nghĩa xác suất thực nghiệm\nKhi thực hiện một ph...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "toan-6-gdpt2018_p35_c0",
+          "score": 0.6896335877442228,
+          "page": 35,
+          "is_page_match": false,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "SỔ TAY TOÁN LỚP 6 (GDPT 2018) | CHƯƠNG: THONG_KE_XAC_SUAT\nTrang 35: Kết quả có thể và Sự kiện trong thí nghiệm ngẫu nhiên\n1. Phép thử nghiệm ngẫu nhiên\nPhép thử...",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 800,
+            "chunking_strategy": "by_paragraph"
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "toan-6-gdpt2018_p36_c1",
+          "score": 0.6798120291118661,
+          "page": 36,
+          "is_page_match": true,
+          "is_evidence_hit": false,
+          "is_hit": false,
+          "text_snippet": "ặt 6 chấm' trong 50 lần gieo của Nam là: 12 / 50 = 6 / 25 = 0,24 (tức\n24%).\nTrang 36 / 36 - Sách GDPT 2018 (CC BY-NC-SA 4.0)",
+          "metadata": {
+            "section": "thong_ke_xac_suat",
+            "char_count": 124,
+            "chunking_strategy": "by_paragraph"
+          }
+        }
+      ]
+    }
+  ]
+}

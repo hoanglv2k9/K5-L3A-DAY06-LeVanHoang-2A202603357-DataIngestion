@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size,500,50,"source,page,section",none,models/gemini-embedding-001,Baseline: Cửa sổ cố định 500 ký tự cắt ngang ý nghĩa,15/15,15/15,5/5,5/5,"85 chunks, 33.81s"
+B,by_paragraph,800,0,"source,page,section",none,models/gemini-embedding-001,Semantic: Giữ trọn cấu trúc đề mục heading toán học,14/15,15/15,5/5,5/5,"67 chunks, 114.7s"
+C,by_paragraph,800,0,"source,page,section",section_filter,models/gemini-embedding-001,Metadata Filtering: Giảm nhiễu giữa các chương toán,14/15,15/15,5/5,5/5,"67 chunks, cùng index B"
